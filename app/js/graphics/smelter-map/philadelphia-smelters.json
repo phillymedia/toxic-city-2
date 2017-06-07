@@ -1,0 +1,640 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::3857"
+        }
+    },
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "SiteName": "A. PEREZ & SON LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306805_",
+                "EPA ID": "PAN000306805",
+                "Address": "5010 LANCASTER AVE. ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19131_",
+                "lat": 39.97517,
+                "long": -75.223123
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.223123, 39.97517]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "A. PEREZ AND SON DIVISION OF ABRAMS METAL CO. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306583_",
+                "EPA ID": "PAN000306583",
+                "Address": "1429 NORTH 22ND STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19121_",
+                "lat": 39.976878,
+                "long": -75.171662
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.171662, 39.976878]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "AMERICAN ALLOYS CO. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306701_",
+                "EPA ID": "PAN000306701",
+                "Address": "1939 EAST SERGEANT STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19125_",
+                "lat": 39.986473,
+                "long": -75.126767
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.126767, 39.986473]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "ATLANTIC METALS CORPORATION",
+                "type": "smelter",
+                "Site ID": "_0306199_",
+                "EPA ID": "PAN000306199",
+                "Address": "2117 EAST YORK STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19125_",
+                "lat": 39.98208,
+                "long": -75.1282
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.1282, 39.98208]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "BERS AND COMPANY LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306866_",
+                "EPA ID": "PAN000306866",
+                "Address": "ASHLAND AND ADAMS ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 40.004978,
+                "long": -75.085575
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.085575, 40.004978]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "CADMAN, A.W. MFG. CO. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306808_",
+                "EPA ID": "PAN000306808",
+                "Address": "18 W. CHELTEN AVE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19144_",
+                "lat": 40.035456,
+                "long": -75.175108
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.175108, 40.035456]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "CAR-MOR METAL COMPANY LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306202_",
+                "EPA ID": "PAN000306202",
+                "Address": "GAUL AND GORDON STREETS ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19125_",
+                "lat": 39.976913,
+                "long": -75.124504
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.124504, 39.976913]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "ELECTRIC STORAGE BATTERY SITE LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306582_",
+                "EPA ID": "PAN000306582",
+                "Address": "1901 ALLEGHENY AVENUE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19132_",
+                "lat": 40.002866,
+                "long": -75.160917
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.160917, 40.002866]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "FEDERATED METALS CORP. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306811_",
+                "EPA ID": "PAN000306811",
+                "Address": "RICHMOND & HEDLEY STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 39.99582,
+                "long": -75.076392
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.076392, 39.99582]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "FEDERATED METALS CORP. LEAD SMELTER 2",
+                "type": "smelter",
+                "Site ID": "_0306812_",
+                "EPA ID": "PAN000306812",
+                "Address": "1700 WALNUT STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19102_",
+                "lat": 39.949822,
+                "long": -75.16926
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.16926, 39.949822]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "FRANKLIN SMELTING",
+                "type": "smelter",
+                "Site ID": "_0305349_",
+                "EPA ID": "PAD002280725",
+                "Address": "3100 CASTOR  ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.983762,
+                "long": -75.084937
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.084937, 39.983762]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "GENERAL SMELTING COMPANY LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306637_",
+                "EPA ID": "PAN000306637",
+                "Address": "2901 EAST WESTMORELAND STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.982365,
+                "long": -75.097543
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.097543, 39.982365]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "GIRARD SMELTING COMPANY",
+                "type": "smelter",
+                "Site ID": "_0306579_",
+                "EPA ID": "PAN000306579",
+                "Address": "BLEIGH AND MILNOR STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19136_",
+                "lat": 40.025413,
+                "long": -75.027142
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.027142, 40.025413]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "JOHN T. LEWIS & BROS. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306638_",
+                "EPA ID": "PAN000306638",
+                "Address": "2600 EAST CUMBERLAND STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19125_",
+                "lat": 39.977638,
+                "long": -75.121146
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.121146, 39.977638]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "JOS. ROSENTHAL'S SON LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306803_",
+                "EPA ID": "PAN000306803",
+                "Address": "1902 W. BERKS STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19122_",
+                "lat": 39.982753,
+                "long": -75.165297
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.165297, 39.982753]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "JOS. ROSENTHAL'S SONS LEAD SMELTER 2",
+                "type": "smelter",
+                "Site ID": "_0306802_",
+                "EPA ID": "PAN000306802",
+                "Address": "1837 N. 2ND STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19122_",
+                "lat": 39.978677,
+                "long": -75.137345
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.137345, 39.978677]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "JOSEPH BERLINGER COMPNAY LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306868_",
+                "EPA ID": "PAN000306868",
+                "Address": "4000 S. ASHLAND ST ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 40.003287,
+                "long": -75.086636
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.086636, 40.003287]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "L. GOLDSTEIN'S SON  LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306821_",
+                "EPA ID": "PAN000306821",
+                "Address": "WISSINOMING AVE & KNOLL ST ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19135_",
+                "lat": 40.021689,
+                "long": -75.040942
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.040942, 40.021689]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "MERCHANTS AND EVANS COMPANY LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306200_",
+                "EPA ID": "PAN000306200",
+                "Address": "2035 WASHINGTON AVENUE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19146_",
+                "lat": 39.939342,
+                "long": -75.177668
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.177668, 39.939342]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "METAL BANK OF AMERICA",
+                "type": "smelter",
+                "Site ID": "_0302383_",
+                "EPA ID": "PAD981737166",
+                "Address": "6801 STATE ROAD ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19138_",
+                "lat": 40.019328,
+                "long": -75.037201
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.037201, 40.019328]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "METRO SMELTING CO., LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306832_",
+                "EPA ID": "PAN000306832",
+                "Address": "ONTARIO & BATH STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.983735,
+                "long": -75.095184
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.095184, 39.983735]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "MINK SMELTING AND REFINING WORKS LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306198_",
+                "EPA ID": "PAN000306198",
+                "Address": "18TH STREET AND WASHINGTON AVENUE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19146_",
+                "lat": 39.93864,
+                "long": -75.173175
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.173175, 39.93864]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "MORGAN SMELTERS CO., LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306828_",
+                "EPA ID": "PAN000306828",
+                "Address": "HEDLEY ST & RICHMOND ST ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 39.99582,
+                "long": -75.076392
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.076392, 39.99582]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "NORTH AMERICAN LEAD SMELTING",
+                "type": "smelter",
+                "Site ID": "_0306696_",
+                "EPA ID": "PAN000306696",
+                "Address": "TIOGA AND EDGEMONT STREETS ",
+                "City": "PHILAELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.987847,
+                "long": -75.095485
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.095485, 39.987847]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "PENNSYLVANIA SMELTING & REFINING",
+                "type": "smelter",
+                "Site ID": "_0306867_",
+                "EPA ID": "PAN000306867",
+                "Address": "ONTARIO & CASPER STS. , SOUTH OF BATH ST ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.981341,
+                "long": -75.092924
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.092924, 39.981341]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "PHILADELPHIA SMELTING & REFINING LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306801_",
+                "EPA ID": "PAN000306801",
+                "Address": "341 NEW MARKET STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19106_",
+                "lat": 39.964448,
+                "long": -75.139004
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.139004, 39.964448]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "REID METAL REFINING CO. LEAD SMELTER ",
+                "type": "smelter",
+                "Site ID": "_0306824_",
+                "EPA ID": "PAN000306824",
+                "Address": "CASTOR AVE & TULIP ST. ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.995808,
+                "long": -75.095567
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.095567, 39.995808]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "RELIABLE METALS REFINING LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306823_",
+                "EPA ID": "PAN000306823",
+                "Address": "3318 MEMPHIS STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.990633,
+                "long": -75.103905
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.103905, 39.990633]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "SALL, GEORGE, METALS CO., 2 LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306822_",
+                "EPA ID": "PAN000306822",
+                "Address": "WESTMORELAND ST. & TULIP STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19134_",
+                "lat": 39.990921,
+                "long": -75.104894
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.104894, 39.990921]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "SALL, GEORGE, METALS CO., LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306804_",
+                "EPA ID": "PAN000306804",
+                "Address": "2255 BUTLER STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 39.997895,
+                "long": -75.093843
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.093843, 39.997895]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "SMELTER METALLURGICAL PRODUCTS LEAD SMELTER ",
+                "type": "smelter",
+                "Site ID": "_0306639_",
+                "EPA ID": "PAN000306639",
+                "Address": "35TH & MOORE STREET ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19145_",
+                "lat": 39.932518,
+                "long": -75.202391
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.202391, 39.932518]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "STANDARD METAL ALLOY",
+                "type": "smelter",
+                "Site ID": "_0306855_",
+                "EPA ID": "PAN000306855",
+                "Address": "813 PARRISH PLACE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19123_",
+                "lat": 39.96711,
+                "long": -75.156175
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.156175, 39.96711]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "THOS. F LUKENS METAL CO. LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306865_",
+                "EPA ID": "PAN000306865",
+                "Address": "2917 E. HEDLEY  ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19137_",
+                "lat": 39.994014,
+                "long": -75.074519
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.074519, 39.994014]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "U.S. SMELTING WORKS, LEAD SMELTER",
+                "type": "smelter",
+                "Site ID": "_0306799_",
+                "EPA ID": "PAN000306799",
+                "Address": "N. AMERICAN & W. BRISTOL ST. ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19140_",
+                "lat": 40.016113,
+                "long": -75.1308
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.1308, 40.016113]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "SiteName": "UNITED SMELTING AND REFINING COMPANY\/LEAD SMELTERS INITIATIVE",
+                "type": "smelter",
+                "Site ID": "_0306201_",
+                "EPA ID": "PAN000306201",
+                "Address": "1700 WASHINGTON AVENUE ",
+                "City": "PHILADELPHIA",
+                "Zip": "_19146_",
+                "lat": 39.938126,
+                "long": -75.171883
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-75.171883, 39.938126]
+            }
+        }
+    ]
+}

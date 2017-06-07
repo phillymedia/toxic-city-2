@@ -1,0 +1,555 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.120675,39.980887 ]
+    },
+    "properties": {
+    "Site":"COLFAX INC",
+    "Address":"2346 E Huntington St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.092974,39.986989 ]
+    },
+    "properties": {
+    "Site":"GRYPHIN PAINT SITE",
+    "Address":"3501 Richmond St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.112624,39.996404 ]
+    },
+    "properties": {
+    "Site":"ALLEGHENY TRAIN E R",
+    "Address":"Allegheny Ave & Trenton Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126767,39.986473 ]
+    },
+    "properties": {
+    "Site":"AMERICAN ALLOYS CO. LEAD SMELTER",
+    "Address":"1939 E SERGEANT ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1282,39.98208 ]
+    },
+    "properties": {
+    "Site":"ATLANTIC METALS CORPORATION",
+    "Address":"2117 E YORK ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.131235,39.971655 ]
+    },
+    "properties": {
+    "Site":"THOMPSON STREET TRAILER SITE",
+    "Address":"400 E Thompson St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.109627,39.991322 ]
+    },
+    "properties": {
+    "Site":"ABBOTT PLATING CO",
+    "Address":"2103-23 Wishart St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.124704,39.977001 ]
+    },
+    "properties": {
+    "Site":"CAR-MOR METAL COMPANY LEAD SMELTER",
+    "Address":"2320 GAUL ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.108833,39.996084 ]
+    },
+    "properties": {
+    "Site":"CASSAR EDWARD H",
+    "Address":"1920 E Cornwall St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.122334,39.977336 ]
+    },
+    "properties": {
+    "Site":"CATTIE GALVANIZING CORP",
+    "Address":"2520 E Hagert St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.119163,39.979486 ]
+    },
+    "properties": {
+    "Site":"CIONE PARK",
+    "Address":"Moyer & Huntingdon Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.118415,39.977762 ]
+    },
+    "properties": {
+    "Site":"ANZON INC",
+    "Address":"2545 Aramingo Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.092741,39.991817 ]
+    },
+    "properties": {
+    "Site":"B AND P MOTOR EXPRESS PHILA TERMINAL",
+    "Address":"2520 Castor Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.091162,39.98577 ]
+    },
+    "properties": {
+    "Site":"BATH AND KINGSTON DRUM DUMP",
+    "Address":"Bath St & Kingston St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.120979,39.978297 ]
+    },
+    "properties": {
+    "Site":"BOYLE GALVANIZING",
+    "Address":"2501-2527 E Cumberland St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.116943,39.977954 ]
+    },
+    "properties": {
+    "Site":"EAST ALBERT ST",
+    "Address":"2624 E Albert St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.08493,39.983754 ]
+    },
+    "properties": {
+    "Site":"FRANKLIN SLAG PILE (MDC)",
+    "Address":"3110 CASTOR AVENUE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.084937,39.983762 ]
+    },
+    "properties": {
+    "Site":"FRANKLIN SMELTING",
+    "Address":"3100 CASTOR AVENUE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.097543,39.982365 ]
+    },
+    "properties": {
+    "Site":"GENERAL SMELTING COMPANY LEAD SMELTER",
+    "Address":"2901 E WESTMORELAND ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.121304,39.978127 ]
+    },
+    "properties": {
+    "Site":"E CUMBERLAND STREET SITE",
+    "Address":"2514 E Cumberland St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.114338,40.001471 ]
+    },
+    "properties": {
+    "Site":"ELLEN KNUTSEN CUMENE SPILL",
+    "Address":"PIER 179 ALLEGHENY AVE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.112624,39.996404 ]
+    },
+    "properties": {
+    "Site":"GATX TERMINALS CORP",
+    "Address":"Allegheny Ave & Delaware River"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.121146,39.977638 ]
+    },
+    "properties": {
+    "Site":"JOHN T. LEWIS & BROS. LEAD SMELTER (AKA: ANZON; NATIONAL LEAD; UNITED METALS)",
+    "Address":"2600 E CUMBERLAND ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.100918,39.992172 ]
+    },
+    "properties": {
+    "Site":"IMPERIAL METAL AND CHEMICAL CO",
+    "Address":"3400 Aramingo  Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.084886,39.981325 ]
+    },
+    "properties": {
+    "Site":"JO ELM CUMENE SPILL",
+    "Address":"PIER 179, 5 DELAWARE & ALLEGHENY AVES"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.138331,39.95909 ]
+    },
+    "properties": {
+    "Site":"JO ROGN-CHEMICAL TANKER",
+    "Address":"PIER 179"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095184,39.983735 ]
+    },
+    "properties": {
+    "Site":"METRO SMELTING CO., LEAD SMELTER",
+    "Address":"ONTARIO ST & BATH ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.096937,39.988864 ]
+    },
+    "properties": {
+    "Site":"LAUREL PRODUCTS",
+    "Address":"2600 E Tioga St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.119435,39.981985 ]
+    },
+    "properties": {
+    "Site":"NHS ST. ANNE'S SCHOOL FOR AUTISTIC CHILDREN",
+    "Address":"2343 E Tucker St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.160273,39.997841 ]
+    },
+    "properties": {
+    "Site":"MARTIN MARIETTA CORP. PHILADELPHIA",
+    "Address":"18th St & Cambria St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095485,39.987847 ]
+    },
+    "properties": {
+    "Site":"NORTH AMERICAN LEAD SMELTING",
+    "Address":"TIOGA ST & EDGEMONT ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.100841,39.994872 ]
+    },
+    "properties": {
+    "Site":"PENN GALVANIZING",
+    "Address":"2201 E Tioga St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.092924,39.981341 ]
+    },
+    "properties": {
+    "Site":"PENNSYLVANIA SMELTING & REFINING",
+    "Address":"ONTARIO ST & CASPER ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.129716,39.971489 ]
+    },
+    "properties": {
+    "Site":"PATHAN CHEMICAL SITE",
+    "Address":"427 E Moyer St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.177899,39.868153 ]
+    },
+    "properties": {
+    "Site":"PHILA REDEVELOPMENT AUTH",
+    "Address":"9TH & COLUMBIA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.08617,39.99934 ]
+    },
+    "properties": {
+    "Site":"RED PHOSPHOROUS FIRE AT JUNKYARD",
+    "Address":"ARAMINGO AVE - NORTH SIDE OF FRANKFORD CREEK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095567,39.995808 ]
+    },
+    "properties": {
+    "Site":"REID METAL REFINING CO. LEAD SMELTER ",
+    "Address":"CASTOR AVE & TULIP ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.103905,39.990633 ]
+    },
+    "properties": {
+    "Site":"RELIABLE METALS REFINING LEAD SMELTER",
+    "Address":"3318 MEMPHIS ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.104527,39.994303 ]
+    },
+    "properties": {
+    "Site":"QUALITY CONTAINER CORP SITE",
+    "Address":"2135 Ontario St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.100739,39.983697 ]
+    },
+    "properties": {
+    "Site":"RICHMOND STREET SITE",
+    "Address":"Richmond St & Allegheny Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.08624,39.981216 ]
+    },
+    "properties": {
+    "Site":"RICHMOND TOWN GAS",
+    "Address":"W DELAWARE AVE & N VEnANGO ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.104894,39.990921 ]
+    },
+    "properties": {
+    "Site":"SALL, GEORGE, METALS CO., 2 LEAD SMELTER",
+    "Address":"WESTMORELAND ST & TULIP ST"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.131858,39.97785 ]
+    },
+    "properties": {
+    "Site":"SCHISSLER RECREATION CENTER",
+    "Address":"Blair & Berks Sts"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095302,39.995214 ]
+    },
+    "properties": {
+    "Site":"ROXBOROUGH CINDER",
+    "Address":"Castor Ave & Aramingo Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.131852,39.965911 ]
+    },
+    "properties": {
+    "Site":"SUGARHOUSE REALTY INC",
+    "Address":"Delaware Ave & Shackamaxon Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.11205,39.994175 ]
+    },
+    "properties": {
+    "Site":"TECHNITROL INC",
+    "Address":"1952 E Allegheny Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.101994,39.986353 ]
+    },
+    "properties": {
+    "Site":"TIOGA STREET SITE",
+    "Address":"PORT RICHMOND"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.093634,39.98577 ]
+    },
+    "properties": {
+    "Site":"TIOGA STREET TIRE FIRE",
+    "Address":"Tioga St & Allen St"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.072598,39.988498 ]
+    },
+    "properties": {
+    "Site":"TIOGA TERMINAL ER",
+    "Address":"3601 Delaware Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.112624,39.996404 ]
+    },
+    "properties": {
+    "Site":"UNITANK TERMINAL SERVICE",
+    "Address":"Allegheny Ave & Delaware River"
+    }
+  }
+]
+}

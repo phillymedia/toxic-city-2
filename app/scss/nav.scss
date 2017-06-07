@@ -1,0 +1,185 @@
+#toxiccitynav {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(#111, 0.85);
+  align-items: stretch;
+  justify-content: space-between;
+  opacity: 0;
+  padding: 10px 0;
+  @include display-flex;
+  @include transition(all 1s ease);
+  @include transform(translateY(-100px));
+
+  a {
+    cursor: pointer;
+  }
+
+  .philly-logo {
+    padding: 4px 18px 4px 35px;
+    @include flex(0 1 200px);
+    min-width: 180px;
+    align-self: center;
+
+    @include tablet {
+      padding: 0px 10px 0px 20px;
+      min-width: 0;
+      @include flex(0 0 130px);
+    }
+
+    .philly-logo-img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .toxic-logo-section {
+    @include flex(0 0 301px);
+    @include display-flex;
+    color: white;
+    font-family: $philly-sans;
+    align-items: center;
+    font-size: 24px;
+    border-left: 1px solid #d5d5d5;
+    padding-left: 20px;
+    // margin: 5px 0;
+    @include tablet {
+      @include flex(0 0 144px);
+    }
+    @include size600 {
+      @include flex(1 1 50%);
+    }
+
+    .proSig {
+      color: #dae255;
+      text-transform: uppercase;
+      font-weight: 200;
+      // padding-top: 5px;
+      @include tablet {
+        font-size: 18px;
+        padding: 0;
+      }
+    }
+
+    .proSigLogo img {
+      width: 25px;
+      margin: -5px 5px 0 5px;
+    }
+
+    .proSigPart {
+      // padding-top: 5px;
+      color: #d5d5d5;
+      text-transform: uppercase;
+      font-weight: 200;
+      @include tablet {
+        display: none;
+
+      }
+    }
+  }
+
+  .toxic-nav-section {
+    @include flex(1 1 50%);
+    padding-left: 10px;
+    @include display-flex;
+    align-items: center;
+    border-right: 1px solid #d5d5d5;
+    // justify-content: space-around;
+    justify-content: flex-end;
+
+    @include size600 {
+      display: none;
+    }
+
+    .part {
+      margin-right: 30px;
+      padding: 0 5px;
+      font-family: $philly-sans;
+      font-weight: 300;
+      color: #fff;
+      text-align: center;
+
+      @include tablet {
+        margin: 0 10px;
+        padding: 0;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    #part2 {
+      border-bottom: 1px solid #ccc;
+      font-weight: 900;
+    }
+  }
+
+  .nav-about {
+    @include flex(0 1 auto);
+    align-self: center;
+    padding: 0 20px;
+    font-family: $philly-sans;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 100%;
+    color: #d5d5d5;
+    cursor: pointer;
+  }
+}
+@include keyframes(animate-nav) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(-100px));
+  }
+
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+.showNav {
+  -moz-transform: translateY(0) !important;
+  -o-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
+  -webkit-transform: translateY(0) !important;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  @include animation(animate-nav 1s);
+}
+@include keyframes(animate-out) {
+  0% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+
+  100% {
+    @include transform(translateY(-100px));
+    opacity: 0;
+  }
+}
+
+.hideNav {
+  opacity: 0;
+  @include transition(translateY(-100px));
+  @include animation(animate-out 1s ease);
+  pointer-events: none;
+}
+
+.showPhillyNav {
+  @include transition(all 1s ease);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.header {
+  position: absolute;
+}
+.progress {
+  position: absolute;
+}

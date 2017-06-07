@@ -1,0 +1,797 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127978,39.982785 ]
+    },
+    "properties": {
+    "Address":"Amber St & E Boston St",
+    "results":[437.6,125.2,1196.3,263.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.128841,39.96943 ]
+    },
+    "properties": {
+    "Address":"E Wildey St & Earl St",
+    "results":[775.8,930,1087.1, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125353,39.971901 ]
+    },
+    "properties": {
+    "Address":"E Girard Ave & E Hewson St",
+    "results":[370,340.8,193.4,402.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126091,39.970475 ]
+    },
+    "properties": {
+    "Address":"E Wildey St & E Wilt St",
+    "results":[415.4,3424.9,3208.1,915.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.114282,39.978016 ]
+    },
+    "properties": {
+    "Address":"E Lehigh Ave & Edgemont St",
+    "results":[80,542.4,43.4,21.8, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.129718,39.973253 ]
+    },
+    "properties": {
+    "Address":"E Palmer St & Willig Ave",
+    "results":[623,9882.6,420.8,502.7,21.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.12788,39.985563 ]
+    },
+    "properties": {
+    "Address":"Emerald St & E Cumberland St",
+    "results":[612.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127305,39.985867 ]
+    },
+    "properties": {
+    "Address":"Emerald and E Firth Sts",
+    "results":[241.4,701.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127305,39.985867 ]
+    },
+    "properties": {
+    "Address":"Emerald St & E Firth St",
+    "results":[205.2,156.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095947,39.984571 ]
+    },
+    "properties": {
+    "Address":"E Allen & E Ontario Sts ",
+    "results":[545.5,528.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.094018,39.990014 ]
+    },
+    "properties": {
+    "Address":"E Venango St & Mercer St",
+    "results":[638,560.9,668.4]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.095485,39.987847 ]
+    },
+    "properties": {
+    "Address":"E Tioga St & Edgemont St",
+    "results":[606.4,715.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.096819,39.987554 ]
+    },
+    "properties": {
+    "Address":"E Schiller St & Webb St",
+    "results":[534.8,744.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.098015,39.986929 ]
+    },
+    "properties": {
+    "Address":"E Ontario St & Webb St",
+    "results":[880.7,717.1,686.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.096571,39.987276 ]
+    },
+    "properties": {
+    "Address":"Edgemont St & E Schiller St",
+    "results":[146,266.4,374.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.107269,39.99361 ]
+    },
+    "properties": {
+    "Address":"E Westmoreland St & Amber St",
+    "results":[643.6,243.1,688.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.09597,39.988402 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Tioga St",
+    "results":[485.5,465.1,480.3,484.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125588,39.986773 ]
+    },
+    "properties": {
+    "Address":"Emerald St & E Huntingdon St",
+    "results":[294.9,1204.6,264.4]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126222,39.983692 ]
+    },
+    "properties": {
+    "Address":"Cumberland & Amber Sts ",
+    "results":[182]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.120759,39.982634 ]
+    },
+    "properties": {
+    "Address":"Tulip St & E Albert St",
+    "results":[44.2, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.122427,39.979418 ]
+    },
+    "properties": {
+    "Address":"Cedar St & E Cumberland St",
+    "results":[1129.1,25.2,78.1,1275.3,1782.9,678.6,919.7,709.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.123206,39.981336 ]
+    },
+    "properties": {
+    "Address":"Tulip St & E Firth St",
+    "results":[849.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.119163,39.979486 ]
+    },
+    "properties": {
+    "Address":"E Huntingdon St & Moyer St",
+    "results":[733.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.12673,39.98618 ]
+    },
+    "properties": {
+    "Address":"Emerald St & E Sergeant St",
+    "results":[4422.2,549.6,426.7,633.1,310.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.128747,39.98653 ]
+    },
+    "properties": {
+    "Address":"Jasper St & E Cumberland St",
+    "results":[202.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125014,39.981329 ]
+    },
+    "properties": {
+    "Address":"Sepviva St & E Letterly St",
+    "results":[360.4,629.3,794.1, 20,35.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.123624,39.984554 ]
+    },
+    "properties": {
+    "Address":"E Huntingdon St & Collins St",
+    "results":[724.8, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.119518,39.976095 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Cumberland St",
+    "results":[542.6,146.2,454.6]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.122672,39.973956 ]
+    },
+    "properties": {
+    "Address":"Aramingo Ave & E Norris St",
+    "results":[199.3,257.3,211.7,612.3,1047.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126768,39.978512 ]
+    },
+    "properties": {
+    "Address":"Memphis St & E Dauphin St",
+    "results":[677.7,327.3,601.6,653.9,445.7]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126746,39.980427 ]
+    },
+    "properties": {
+    "Address":"York Street & Sepviva St",
+    "results":[644.3,233]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127388,39.98308 ]
+    },
+    "properties": {
+    "Address":"Amber St & E Hagert St",
+    "results":[80,176.9,87.7,115.5, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.115728,39.976792 ]
+    },
+    "properties": {
+    "Address":"Tilton St & E Albert St",
+    "results":[902.3, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.120945,39.978769 ]
+    },
+    "properties": {
+    "Address":"Gaul St & E Firth St",
+    "results":[233.9,1044.8, 20,866.8,985.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125925,39.971828 ]
+    },
+    "properties": {
+    "Address":"E Girard Ave & E Berks St",
+    "results":[1691.3, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.123634,39.976909 ]
+    },
+    "properties": {
+    "Address":"York Street & Belgrade St",
+    "results":[360.6, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125704,39.982101 ]
+    },
+    "properties": {
+    "Address":"Trenton Ave & E Letterly St",
+    "results":[ 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.123871,39.980028 ]
+    },
+    "properties": {
+    "Address":"Memphis St & E Letterly St",
+    "results":[ 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.123842,39.974694 ]
+    },
+    "properties": {
+    "Address":"E Norris St & Mercer St",
+    "results":[160.2,29, 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.11707,39.980197 ]
+    },
+    "properties": {
+    "Address":"Miller St & E Oakdale St",
+    "results":[ 31.3, 20,63.4]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.125664,39.977267 ]
+    },
+    "properties": {
+    "Address":"E Dauphin St & Ritter St",
+    "results":[24]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.130535,39.982777 ]
+    },
+    "properties": {
+    "Address":"Coral St & E Dauphin St",
+    "results":[ 20]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127191,39.980929 ]
+    },
+    "properties": {
+    "Address":"York Street & Collins St",
+    "results":[48.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127901,39.972818 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Montgomery Ave",
+    "results":[ 20, 31.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.117219,39.977291 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Huntingdon St",
+    "results":[2903.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.11841,39.976673 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Sergeant St",
+    "results":[92]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.117228,39.97848 ]
+    },
+    "properties": {
+    "Address":"Almond St & E Albert St",
+    "results":[1204,2277.7,2765,3521,3018.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.117871,39.979208 ]
+    },
+    "properties": {
+    "Address":"Belgrade St & E Albert St",
+    "results":[923.9,1371.7,1478.5,1097.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.117537,39.978315 ]
+    },
+    "properties": {
+    "Address":"Almond St & E Harold St",
+    "results":[698.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.11627,39.977403 ]
+    },
+    "properties": {
+    "Address":"E Albert St & Webb St",
+    "results":[1197.3,1371.1,783.9,731.7]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.116017,39.977113 ]
+    },
+    "properties": {
+    "Address":"Edgemont St & E Albert St",
+    "results":[933.7]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.104894,39.990921 ]
+    },
+    "properties": {
+    "Address":"E Westmoreland St & Tulip St",
+    "results":[1612.2,2494.3,834.7]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.104603,39.990588 ]
+    },
+    "properties": {
+    "Address":"E Westmoreland St & Agate St",
+    "results":[80,390.3,406.3,562.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126222,39.983692 ]
+    },
+    "properties": {
+    "Address":"Amber St & E Cumberland St",
+    "results":[726.3,635.6,1760.1]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126797,39.983612 ]
+    },
+    "properties": {
+    "Address":"2466 Amber St",
+    "results":[288.1,1646.8,215.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126821,39.983385 ]
+    },
+    "properties": {
+    "Address":"Letterly & Amber Sts",
+    "results":[135.4,148]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.124718,39.98445 ]
+    },
+    "properties": {
+    "Address":"Frankford Ave & Amber St",
+    "results":[264.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.122476,39.98695 ]
+    },
+    "properties": {
+    "Address":"Frankford Ave & Coral St",
+    "results":[67.3]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126738,39.982341 ]
+    },
+    "properties": {
+    "Address":"Frankford Ave & E Hagert St",
+    "results":[32]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.128179,39.982057 ]
+    },
+    "properties": {
+    "Address":"E York St & Martha St",
+    "results":[1940.8]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.128563,39.982474 ]
+    },
+    "properties": {
+    "Address":"York Street & Amber St",
+    "results":[316.8,362.2,264.9]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.129354,39.983385 ]
+    },
+    "properties": {
+    "Address":"York Street & Coral St",
+    "results":[194.2,126.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.199514,39.957411 ]
+    },
+    "properties": {
+    "Address":"39.977155, -75.117830",
+    "results":[435.6]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.116818,39.9775 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Harold St",
+    "results":[692]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.116505,39.977665 ]
+    },
+    "properties": {
+    "Address":"E Thompson St & E Albert St",
+    "results":[100.2,1071.8,953.8,737.8,1234.6,1016.5]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.121578,39.97844 ]
+    },
+    "properties": {
+    "Address":"Gaul St & E Cumberland St",
+    "results":[37.8,133.6]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.119282,39.979634 ]
+    },
+    "properties": {
+    "Address":"Gaul St & E Huntingdon St",
+    "results":[325.6]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.118564,39.978836 ]
+    },
+    "properties": {
+    "Address":"Aramingo Ave & E Huntingdon St",
+    "results":[29]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126165,39.986469 ]
+    },
+    "properties": {
+    "Address":"Emerald St & E Hazzard St  ",
+    "results":[868.4]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.127305,39.985867 ]
+    },
+    "properties": {
+    "Address":"E Firth St & Emerald St ",
+    "results":[676.2]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.128563,39.982474 ]
+    },
+    "properties": {
+    "Address":"E York St & Amber St",
+    "results":[309.7,275.6]
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.126821,39.983385 ]
+    },
+    "properties": {
+    "Address":"Amber St & E Letterly St",
+    "results":[179]
+    }
+  }
+]
+}

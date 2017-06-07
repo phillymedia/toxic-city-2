@@ -1,0 +1,43 @@
+<!--removeIf(production)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>toxic-city-2</title>
+
+    {% include "shell/style-links.html" ignore missing %}
+     <link rel="stylesheet" href="css/phillystyles.css">
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+
+
+</head>
+
+<body>
+
+    {% include "shell/navigation.html" ignore missing %}
+    <!--endRemoveIf(production)-->
+<div>
+    {% include "partials/stylesheets.html" %}
+</div>
+    {% include "main-body.html" ignore missing %}
+    {% include "partials/recirc-box.html" %}
+<div>
+    {% include "partials/script-links.html" %}
+</div>
+
+    <!--removeIf(production)-->
+
+    <!--build:js js/main.min.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
+<!--endRemoveIf(production)-->

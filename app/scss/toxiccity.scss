@@ -1,0 +1,673 @@
+@import "philly-styles/values";
+
+.fixedImage1 {
+    background-image: url("http://media.philly.com/images/lead_peeling_paint2_1354.jpg");
+}
+
+.fixedImage2 {
+    background-image: url("http://media.philly.com/images/septa17_6_gettingontrain_1354.jpg");
+}
+
+.fixedImage3 {
+    background-image: url("http://media.philly.com/images/srails_running_for_septa_1354.jpg");
+}
+
+.extrabottompadding {
+    padding-bottom: 35px;
+    @include mobile {
+      padding-bottom: 0;
+   }
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+
+.leadSubhead {
+    color: black;
+    font-family: $philly-sans;
+    font-size: 20px;
+    margin: 4% 0;
+    font-weight: bold;
+    background-color: #e9f070;
+    padding: 10px 25px;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.bylineBox {
+    width: 250px;
+    float: left;
+    margin: 20px 20px 0 0;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+
+.proHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    padding: 5px 0 0 5%;
+    background-color: #222;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(2,2,2,.8);
+}
+
+.logoItem {
+    float: left;
+    color: #eee;
+    font-family: $philly-sans;
+    font-size: 14px;
+    @include tablet {
+        font-size: 11px;
+        line-height: 1.9em;
+    }
+}
+
+.proSig {
+    color: $toxicgreen;
+    text-transform: uppercase;
+    margin: 7px 5px 0 20px;
+    font-weight: 200;
+    @include tablet {
+        margin: 7px 0 0 7px;
+    }
+}
+
+.proSigLogo img {
+    width: 25px;
+    margin: 4px 5px 0 0;
+    @include mobile {
+        width: 19px;
+        margin: 0 3px 2px;
+    }
+}
+
+.proSigPart {
+    color: #d5d5d5;
+    text-transform: uppercase;
+    margin: 7px 5px 0 0;
+    font-weight: 200;
+}
+
+.logo-link2 {
+    margin-right: 7px;
+}
+
+.logo-link2 img {
+    position: relative;
+    width: 125px;
+    top: 5px;
+    padding-right: 20px;
+    border-right: 1px solid #555;
+    @include tablet {
+        width: 105px;
+        margin: 2px 0;
+    }
+}
+
+.logoMenu:hover {
+    color: $toxicgreen;
+}
+
+.logoMenu {
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    color: #d5d5d5;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 5px;
+    border-left: 1px solid #555;
+}
+
+.headLogo {
+    font-size: 26px;
+    float: left;
+    font-family: $philly-sans;
+    letter-spacing: normal;
+    font-weight: 200;
+    @include tablet {
+        font-size: 22px;
+    }
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+.proMainHead {
+    font-family: $philly-sans;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8) !important;
+    /* background-color: rgba(0,0,0,0.6); */
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: -1px;
+    line-height: normal;
+}
+
+.inlineByline {
+    font-style: italic;
+    letter-spacing: normal;
+    font-size: 1.0625em;
+    /* opacity: 0.9; */
+    line-height: 1.5;
+    /* max-width: 500px; */
+    font-weight: 100;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8) !important;
+    font-size: 16px;
+    color: #ffffff;
+    // padding: 0 30px;
+    font-family: $philly-serif;
+}
+
+.spaceTB {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.right.carousel-control {
+    background-image: none;
+    color: #000;
+    margin-right: -9%;
+}
+
+.left.carousel-control {
+    background-image: none;
+    color: #000;
+    margin-left: -9.8%;
+}
+
+.mobileVersion {
+    display: none;
+    @media only screen and (max-width:1024px) {
+        display: none;
+    }
+}
+
+.verticalOffsetGraphic {
+    width: 76%;
+    margin-right: -30%;
+    float: right;
+    padding: 1% 0 1% 3%;
+    @media only screen and (max-width: 1024px) {
+        width: 50%;
+        margin-right: 0;
+        padding: 2% 0;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 100% !important;
+        margin-right: 0;
+        float: none;
+        padding: 2% 0;
+    }
+}
+
+.verticalOffsetGraphic img {
+    width: 100%;
+}
+
+.expand {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+.shrink {
+    height: 30px !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: 0 !important;
+}
+
+.graphicExpand-wrapper {
+    width: 130%;
+    position: relative;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        position: relative;
+    }
+    @include mobile {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.graphicExpand-frame {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-top: 4px solid #D8E32D;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mobile {
+        border-top: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.graphicExpand-container {
+    width: 270px;
+    background-color: #333;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    cursor: pointer;
+    margin: -20px 0 15px 20px;
+    @include mobile {
+        width: 100%;
+        float: none;
+        margin: -40px 0 30px;
+    }
+}
+
+.graphicExpand-icon {
+    width: 60px;
+    position: absolute;
+    top: -17px;
+    left: -10px;
+    z-index: 2;
+    @include mobile {
+        width: 26px;
+        left: 6px;
+        top: 2px;
+    }
+}
+
+.graphicExpand-headline {
+    font-size: 26px;
+    color: white;
+    font-weight: 800;
+    font-family: $philly-sans;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    padding: 25px;
+    text-align: right;
+}
+
+.graphicExpand-image {
+    width: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.graphicExpand-button {
+    width: 100%;
+    height: 30px;
+    background-color: #D8E32D;
+    text-align: center;
+}
+
+.graphicExpand-button:hover {
+    background-color: #555;
+    color: #D8E32D;
+    cursor: pointer;
+}
+
+.newpadding {
+    padding: 7px 0 0;
+}
+
+.paddinglogo {
+    padding: 4px 0 0;
+}
+
+.newpaddingfirst {
+    padding: 7px 0 0 7px;
+}
+
+.proSig {
+    margin: 0;
+}
+
+.proSigLogo img {
+    margin: 0 3px 2px;
+    @include tablet {
+        width: 19px;
+        margin: 0 3px 2px;
+    }
+}
+
+.proSigPart {
+    margin: 0;
+}
+
+.mainSigBox {
+    background-color: #000;
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding: 5px 0 3px 10px;
+    margin-left: 20px;
+    @include tablet {
+        overflow: hidden;
+        height: 32px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px !important;
+        margin-left: 0 !important;
+    }
+}
+
+.bigtitle {
+    top: initial;
+    left: 2% !important;
+    color: #222 !important;
+    font-family: $philly-serif;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: normal;
+    padding: 20px 30px;
+    text-shadow: none;
+    max-width: 700px;
+    position: absolute;
+    bottom: 17%;
+    @include tablet {
+        display: none;
+    }
+}
+
+.bigtitleOutside {
+    display: none;
+    font-family: $philly-serif;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: normal;
+    padding: 0;
+    text-shadow: none;
+    @include tablet {
+        display: block;
+    }
+}
+
+.bigtitleOutside .proMainHead {
+    font-family: $philly-sans;
+    color: #000;
+    text-shadow: none !important;
+    padding: 30px 10px 10px;
+    font-weight: 700;
+    font-size: 55px;
+    @include tablet {
+        font-size: 55px;
+    }
+    @include mobile {
+        font-family: $philly-sans;
+        color: #000;
+        text-shadow: none !important;
+        padding: 15px 10px 10px;
+        font-weight: 700;
+        font-size: 55px;
+        margin-bottom: 0.625rem;
+        font-weight: 800;
+        letter-spacing: -.0625rem;
+        font-size: 2.5rem;
+        line-height: 1.05;
+    }
+}
+
+.bigtitleOutside .inlineByline {
+    line-height: 1.5;
+    font-weight: normal;
+    text-shadow: none !important;
+    font-size: 18px;
+    color: #777777;
+    padding-left: 10px;
+}
+
+.fixedImage0 {
+    max-height: 900px;
+    background-position: center bottom !important;
+}
+
+.fixedImage {
+    height: inherit !important;
+    @media screen and (max-width: 900px) {
+        padding-bottom: 85%;
+    }
+}
+
+.subheadwidth {
+    width: inherit !important;
+}
+
+div[itemprop="articleBody"] {
+    overflow-x: hidden;
+}
+
+.leadCourtSubheader {
+    font-family: $philly-sans;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.leadCourtSubheader_inverse {
+    font-family: $philly-sans;
+    color: #d8e32d;
+    font-size: 26px;
+}
+
+.leadCourtBody_inverse {
+    color: #bebebe;
+    font-family: $philly-serif;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.inverseTranstionContainer a {
+    color: #A8C3DD;
+    text-decoration: none;
+}
+
+.inverseTranstionContainer a:hover,
+.inverseTranstionContainer a:visited {
+    color: #6F8396;
+}
+
+.graphicSource {
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Arial, sans-serif;
+}
+
+.graphicSource a {
+    color: black;
+    text-decoration: none;
+}
+
+.circleSection {
+    opacity: 0.7;
+    fill: rgba(211,172,16,0.50);
+}
+
+.dropCap {
+    float: left;
+    color: #222;
+    font-size: 59px;
+    padding-top: 18px;
+    padding-right: 8px;
+    font-weight: 100;
+    padding-left: 3px;
+    font-family: $philly-serif;
+    @include mobile {
+        font-size: 40px;
+        line-height: 35px;
+        color: white;
+        margin: 7px 8px 0 0;
+        font-weight: 400;
+    }
+}
+
+.dropCapFirst {
+    font-size: 90px;
+    color: rgba(96,96,96,1.00);
+}
+
+.accent_0 {
+    font-size: 90px;
+}
+
+.accent_1 {
+    font-size: 28px;
+    color: rgba(96,96,96,1.00);
+    line-height: 34.3px;
+    @include mobile {
+        font-size: 18px;
+        color: inherit;
+        line-height: 1.9em;
+    }
+}
+
+.accent_2 {
+    font-size: 60px;
+    color: #222;
+    font-weight: 100;
+}
+/* transitions */
+.inverseTranstionContainer {
+    border-top: 0.5px solid rgba(219,219,219,1.00);
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.fadeContainer {
+    width: 100%;
+    position: relative;
+}
+
+.fadeInBackground {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.fadeIn {
+    position: relative;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.innerNavContainer {
+    border-right: 1px dotted lightgray;
+    height: 60px;
+    font-family: $philly-serif;
+    text-align: right;
+}
+
+.innerNavContainer span {
+    font-size: 12px;
+    font-family: $philly-sans;
+}
+
+.rightInlineGraphic {
+    float: right;
+    width: 130%;
+    margin-right: -90%;
+    padding: 0 10%;
+}
+
+.centerInlineGraphic {
+    width: 180%;
+    padding: 5% 0;
+}
+@include mobile {
+    .custom-social-share .comment,
+    .custom-social-share .reprints {
+        display: none;
+    }
+}
+
+#navEffectBackground-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 340;
+    background-color: #111;
+    display: none;
+    opacity: 0.6;
+}
+
+.dropdown-nav {
+    top: 40px;
+    // background-color: #333;
+    background: rgba(17, 17, 17, 0.85);
+    color: white;
+    overflow: scroll;
+    padding: 2%;
+    width: 300px;
+    margin-right: -300px;
+    height: 100%;
+    position: fixed;
+    padding-bottom: 10%;
+    font-family: $philly-sans;
+    right: 0;
+    z-index: 999;
+}
+
+.dropdown-nav p {
+    line-height: 1.4;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: $philly-sans;
+}
+
+.dropTitle-nav,
+.dropTitle-nav a {
+    color: #d8e32d;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dropChapter-nav,
+.toolItem-nav {
+    text-transform: uppercase;
+    color: #f3f6f9;
+    font-size: 14px;
+    padding: 8% 0;
+}
+
+.dropChapter-nav span,
+.toolItem-nav span {
+    font-size: 12px;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 500;
+    color: #B6B6B6;
+    line-height: 1.4;
+}
+
+.drop-section-nav {
+    display: inline-block;
+}
+.proHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 10px 0 10px 5%;
+    background-color: #222;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(2,2,2,.7);
+}

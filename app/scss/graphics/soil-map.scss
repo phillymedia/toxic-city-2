@@ -1,0 +1,212 @@
+
+.low {
+
+}
+.high {
+  background-color: red !important;
+}
+
+//
+
+
+
+
+.popup-headline {
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+
+.case{
+	width:15px !important;
+	height:15px !important;
+    border-radius: 100px;
+    opacity: 0.9;
+	border: 1px solid #999;
+}
+
+
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.radiusLegend {
+  border-radius: 25px;
+  border: 1px dashed #777;
+}
+
+
+
+
+.epaLegend,
+.sfLegend {
+    width: 21px;
+    height: 21px;
+    opacity: 0.6;
+    border-radius: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+.map-container {
+    position: relative;
+}
+
+
+
+
+
+
+
+.popup-headline {
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.popup-headline span {
+  color:#aaa;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.popup-text {
+    // background-color: #efefef;
+    color: #555;
+    margin-top: 7px;
+    font-family: monospace;
+}
+
+.popup-text .soilrow {
+  border-top: 1px solid #eee;
+  padding: 4px 0;
+}
+
+.soilrow.soilred {
+  color:red;
+}
+
+.toggle-button {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    /* float: right; */
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 800;
+    width: 50px;
+
+
+}
+
+#smelter-button {
+  top: 10px;
+  right: 10px;
+  height: 50px;
+}
+
+#low-button {
+  top: 70px;
+  right: 10px;
+  font-weight: bold;
+  height: 30px;
+}
+
+.toggle400 {
+  display: none;
+}
+
+.toggle-button:hover {
+    background-color: #f4f4f4;
+}
+
+.toggle-button:focus {
+    outline: 0;
+}
+
+.toggle-button .fa {
+    font-size: 20px;
+    color: #333;
+
+}
+
+
+.industryIcon {
+  border-radius: 15px;
+  background-color: #82a6c9;
+  color: white;
+  text-align: center;
+  border: 1px solid rgb(197, 209, 118);
+}
+
+.industryIcon i {
+  font-size: 14px;
+  color: white;
+  line-height: 1.9;
+}
+
+span svg {
+    height: 31px;
+    width: 27px;
+    margin-bottom: -14px;
+}
+
+.footnote {
+    font-family: $philly-sans;
+    color: #666;
+    font-size: 13px;
+}
+
+
+.innerRadius::after {
+    content: " - Remember this";
+}
+
+#soilmapgraphic {
+  .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive {
+    pointer-events: auto !important;
+  }
+    .map-inner {
+      padding-bottom: percentage(10/10);
+      position: relative;
+  }
+  .left-section {
+    @include flex(1 1 60%);
+    padding-right: 30px;
+  }
+  .right-section {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .legend {
+    text-align: left;
+  }
+  .popup-text {
+    border: none;
+    padding: 0;
+}
+}
+
+#map-samples {
+  z-index: 0;
+}
+#smelter-button {
+  z-index: 0;
+}
+#low-button {
+  z-index: 0;
+}

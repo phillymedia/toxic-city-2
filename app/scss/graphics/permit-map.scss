@@ -1,0 +1,178 @@
+.leaflet-bottom.leaflet-left {
+  width: 100%;
+}
+
+.leaflet-control-container .leaflet-timeline-controls {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+#map {
+  height: 400px !important;
+}
+
+.case {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 100px;
+  opacity: 0.9;
+  border: 1px solid #999;
+  pointer-events: none !important;
+}
+
+.past {
+  opacity: 0.20 !important;
+  border: 1px solid #999 !important;
+}
+
+.leaflet-timeline-control {
+  margin-bottom: 30px !important;
+}
+
+.time-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: inline-block;
+  padding-right: 15px;
+  width: 19%;
+}
+
+.sldr-ctrl-container {
+  width: 80%;
+}
+
+.pause,
+.play {
+  width: 30px !important;
+  height: 20px !important;
+}
+
+.next,
+.prev {
+  display: none;
+}
+//
+#chart-container {
+  position: relative;
+}
+
+#chart-line-container {
+  width: 93.6%;
+  height: 75.7%;
+  position: absolute;
+  top: 9%;
+  right: 1.9%;
+  pointer-events: none;
+}
+
+#chart-line {
+  position: relative;
+  width: 0;
+  height: 100%;
+  opacity: 0.3;
+  border-right: 3px solid #aaa;
+}
+
+.legend {
+  // border-top: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
+  padding: 0 0 15px;
+  text-align: center;
+}
+
+.legend-row {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.conLegend,
+.demoLegend {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  border-radius: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+.conLegend {
+  background-color: rgb(197, 209, 118);
+}
+
+.demoLegend {
+  background-color: #82a6c9;
+}
+
+.graphic-section {
+  @include display-flex;
+  align-items: stretch;
+
+  .left-section {
+    @include flex(1 1 50%);
+    padding-right: 20px;
+  }
+
+  .right-section {
+    @include flex(1 1 40%);
+    @include display-flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  #chart-container {
+    @include flex(1 1 100%);
+  }
+}
+
+.instructions {
+  font-size: 18px !important;
+  padding: 5%;
+}
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  background: #222;
+  color: white;
+}
+.leaflet-control-layers {
+  font-family: $philly-sans;
+  background: #222;
+  color: white;
+
+  .button-container {
+    width: auto;
+    padding-right: 10px;
+  }
+  .sldr-ctrl-container {
+    width: auto !important;
+  }
+  .play {
+    background-color: rgba($toxicgray,0.7);
+    border-radius: 2px;
+    color: white;
+  }
+}
+
+#map-permits {
+  z-index: 0;
+}
+
+.line-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  #trackline {
+    // height: 100%;
+    border-left: 2px solid rgba(gray,0.5);
+    width: 5px;
+    left: 10px;
+    position: absolute;
+    top: 30px;
+    bottom: 60px;
+    margin-left: 6.5%;
+  }
+}

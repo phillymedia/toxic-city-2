@@ -71,7 +71,7 @@ pointTimeline.on('change', function(e) {
             if (currentYear == 2016) {
               // $("#trackline").css("left","90%");
             } else {
-              $("#trackline").css("left",leftPosition);
+            //   $("#trackline").css("left",leftPosition);
             }
     });
 });

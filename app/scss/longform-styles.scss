@@ -227,7 +227,11 @@
 
 .bodyContainer {
     margin-top: 10px;
-    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 50px;
+
+    }
 }
 
 .imagebreak {

@@ -126,6 +126,11 @@ span svg {
   .left-section {
     @include flex(1 1 35%);
     padding-right: 40px;
+
+    @include mobile {
+        @include flex(1 1 100%);
+        padding: 0;
+    };
   }
 }
 

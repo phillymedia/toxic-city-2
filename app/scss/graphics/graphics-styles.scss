@@ -3,6 +3,10 @@
   margin: 0 auto 20px;
   font-family: $philly-sans;
 
+  @include mobile {
+      padding: 25px 0;
+  };
+
   &::before {
     content: "";
     border-top: 3px solid $toxicyellow;
@@ -11,6 +15,9 @@
     margin: 0 auto;
     height: 2px;
     padding-bottom: 25px;
+    @include mobile {
+        width: 100%;
+    };
   }
 }
 

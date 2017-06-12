@@ -183,10 +183,20 @@ span svg {
     .map-inner {
       padding-bottom: percentage(10/10);
       position: relative;
+      @include mobile {
+          padding: 0;
+          height: 300px;
+      };
   }
   .left-section {
     @include flex(1 1 60%);
     padding-right: 30px;
+    @include mobile {
+        @include flex(1 1 100%);
+        padding: 0;
+        margin-bottom: 15px;
+        order: 2;
+    };
   }
   .right-section {
     align-items: flex-start;

@@ -112,9 +112,18 @@
   @include display-flex;
   align-items: stretch;
 
+  @include mobile {
+      flex-wrap: wrap;
+  };
+
   .left-section {
     @include flex(1 1 50%);
     padding-right: 20px;
+
+    @include mobile {
+        @include flex(1 1 100%);
+        height: 300px;
+    };
   }
 
   .right-section {
@@ -132,6 +141,11 @@
 .instructions {
   font-size: 18px !important;
   padding: 5%;
+  @include mobile {
+      padding: 15px 0;
+      font-size: 16px !important;
+      margin-bottom: 0 !important;
+  };
 }
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
   background: #222;

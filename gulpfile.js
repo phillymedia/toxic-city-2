@@ -49,6 +49,7 @@ gulp.task('browserifyBuild', function() {
         })
         .bundle()
         .pipe(source('main.js'))
+        // .pipe(plugins.gulpIf('*.js', plugins.uglify()))
         .pipe(buffer())
         .pipe(gulp.dest('.tmp/js'))
 });

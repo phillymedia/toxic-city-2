@@ -31,27 +31,27 @@ L.TimelineSliderControl = L.Control.extend({
    * will be calculated automatically based on the timelines registered to this
    * control.
    */
-  initialize(options = {}) {
-    const defaultOptions = {
-      duration:               30000,
-      enableKeyboardControls: false,
-      enablePlayback:         true,
-      formatOutput:           output => `${output || ''}`,
-      showTicks:              true,
-      waitToUpdateMap:        false,
-      position:               'bottomleft',
-      steps:                  120,
-    };
-    this.timelines = [];
-    L.Util.setOptions(this, defaultOptions);
-    L.Util.setOptions(this, options);
-    if (typeof options.start !== 'undefined') {
-      this.start = options.start;
-    }
-    if (typeof options.end !== 'undefined') {
-      this.end = options.end;
-    }
-  },
+  // initialize(options = {}) {
+  //   const defaultOptions = {
+  //     duration:               30000,
+  //     enableKeyboardControls: false,
+  //     enablePlayback:         true,
+  //     formatOutput:           output => `${output || ''}`,
+  //     showTicks:              true,
+  //     waitToUpdateMap:        false,
+  //     position:               'bottomleft',
+  //     steps:                  120,
+  //   };
+  //   this.timelines = [];
+  //   L.Util.setOptions(this, defaultOptions);
+  //   L.Util.setOptions(this, options);
+  //   if (typeof options.start !== 'undefined') {
+  //     this.start = options.start;
+  //   }
+  //   if (typeof options.end !== 'undefined') {
+  //     this.end = options.end;
+  //   }
+  // },
 
   /* INTERNAL API *************************************************************/
 

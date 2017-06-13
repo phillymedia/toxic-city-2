@@ -124,6 +124,11 @@
   right: 10px;
   font-weight: bold;
   height: 30px;
+  font-size: 14px;
+  color: black;
+  &:hover {
+      color: black;
+  }
 }
 
 .toggle400 {

@@ -136,7 +136,6 @@
             letter-spacing: 1px;
             font-size: 65px;
             text-shadow: none;
-
             @include tablet {
                 padding: 0 10px 20px;
                 position: relative;
@@ -230,7 +229,6 @@
 
     &:last-child {
         margin-bottom: 50px;
-
     }
 }
 
@@ -303,11 +301,11 @@ h1.sf-header__heading.dib.va--middle {
     font-weight: 600;
 }
 
-.gray--dark-5, .gray--dark-5 a {
-  color: #ffffff;
-  font-weight: 600;
+.gray--dark-5,
+.gray--dark-5 a {
+    color: #ffffff;
+    font-weight: 600;
 }
-
 // .block__list-item-flex.with-dividers {
 //     border-right: 1px solid #545454;
 // }
@@ -340,7 +338,6 @@ p {
     -webkit-text-size-adjust: none;
     -moz-osx-font-smoothing: grayscale;
 }
-
 // .progress {
 //     position: fixed !important;
 //     left: 0;
@@ -374,20 +371,20 @@ p {
 }
 
 .bodyContainer p {
-  a {
-    cursor: pointer;
-    color: #0061A2;
-    box-shadow: inset -2px -5px 0 -2px #d5eeff;
-    @include transition(box-shadow 0.3s cubic-bezier(0.86, 0, 0.07, 1));
-}
+    a {
+        cursor: pointer;
+        color: #0061A2;
+        box-shadow: inset -2px -5px 0 -2px #d5eeff;
+        @include transition(box-shadow 0.3s cubic-bezier(0.86, 0, 0.07, 1));
+    }
 }
 
 .bodyContainer p {
-  a:hover {
-    box-shadow: inset -2px -20px 0 -3px #d5eeff;
-    text-decoration: none;
-}}
-
+    a:hover {
+        box-shadow: inset -2px -20px 0 -3px #d5eeff;
+        text-decoration: none;
+    }
+}
 
 .linkBox {
     padding: 25px;

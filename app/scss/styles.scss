@@ -11,12 +11,11 @@ $toxicgray: #d5d5d5;
 @import 'graphics/smelter-map';
 @import 'graphics/soil-map';
 
-
-
 svg {
   max-width: none !important;
   max-height: none !important;
 }
+
 
 
 .heroText-outer {
@@ -84,3 +83,9 @@ svg {
 //   z-index: 101 !important;
 //
 // }
+
+.col-md-10:first-child {
+
+        margin-top: 30px !important;
+
+}

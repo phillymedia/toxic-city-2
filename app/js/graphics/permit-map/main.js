@@ -1,6 +1,6 @@
 var points = require("./permitpoints.json");
 require("./timeline");
-require("./timelineslider");
+// require("./timelineslider");
 
 var basemapURL = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png';
 

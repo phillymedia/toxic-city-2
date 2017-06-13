@@ -1,6 +1,6 @@
 var smeltersData = require("./philadelphia-smelters.json");
 var epa_philadelphiaData = require("./epa_philadelphia.json");
-require("./groupedlayercontrol");
+// require("./groupedlayercontrol");
 
 
 var epaStyle = {

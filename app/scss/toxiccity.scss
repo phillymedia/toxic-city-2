@@ -34,7 +34,10 @@ body {
     padding: 10px 25px;
     width: auto;
     text-transform: uppercase;
-    float: left;
+
+    @include BS-medium {
+        float: left;
+    }
 }
 
 .bylineBox {
@@ -454,6 +457,9 @@ body {
 
 .subheadwidth {
     width: inherit !important;
+    @include BS-medium {
+        padding: 0;
+    }
 }
 
 div[itemprop="articleBody"] {

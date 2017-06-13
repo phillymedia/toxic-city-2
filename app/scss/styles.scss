@@ -11,9 +11,22 @@ $toxicgray: #d5d5d5;
 @import 'graphics/smelter-map';
 @import 'graphics/soil-map';
 
+$toxicyellow: #e9f070;
+$toxicgreen: #dae255;
+$toxicgray: #d5d5d5;
+
 svg {
   max-width: none !important;
   max-height: none !important;
+}
+
+%smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -92,10 +105,28 @@ svg {
 
 .relatedLinks {
     float: left;
-    margin: 0 20px 20px -100px;
     padding: 20px;
-    background-color: $toxicgray;
-    max-width: 35%;
+    background-color: #333;
+    color: white;
+    border-top: 4px solid $toxicgreen;
+    @extend %smoothing;
+    max-width: 250px;
+    margin: 0 30px 10px 0px;
+
+    @include mobile {
+        max-width: 100%;
+    }
+
+    @include BS-medium {
+        max-width: 300px;
+
+        margin: 0 20px 20px -75px;
+    }
+
+    @include BS-large {
+        max-width: 35%;
+        margin: 0 20px 20px -100px;
+    }
 
     h4 {
         font-size: 18px;
@@ -104,13 +135,23 @@ svg {
         letter-spacing: 1px;
         font-family: $philly-sans;
         padding-bottom: 10px;
+        color: white;
     }
     a {
         font-family: $philly-sans;
         font-weight: 600;
-        color: black;
+        color: white;
         font-size: 15px;
         line-height: 1.1;
+        cursor: pointer;
+        @include transition(color .5s ease);
+
+
+        &:hover {
+            text-decoration: none;
+            color: $toxicyellow;
+            @include transition(color .5s ease);
+        }
     }
 
 }
@@ -124,12 +165,11 @@ svg {
     border-top: 4px solid $toxicgreen;
     margin-right: -2vw;
     max-width: 50%;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: none;
-    -moz-osx-font-smoothing: grayscale;
+    @extend %smoothing;
+
+    .source {
+        color: #ccc;
+    }
 
     p {
         font-family: $philly-sans;
@@ -172,6 +212,21 @@ svg {
         max-width: 55%;
         margin-right: -22vw;
     }
+}
+
+.checklist {
+    list-style: none !important;
+    li {
+        &::before {
+            content:"\f046";
+            font-family: fontAwesome;
+            display: inline-block;
+            margin-left: -20px;
+            margin-right: 4px;
+
+        }
+    }
+
 }
 
 .expander {

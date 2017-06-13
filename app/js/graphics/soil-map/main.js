@@ -1,8 +1,3 @@
-// $(document).ready(function(){
-// });
-
-
-
 var soil_scrubbedData = require("./soil_scrubbed.json");
 var smelters_localData = require("./smelters_local.json");
 

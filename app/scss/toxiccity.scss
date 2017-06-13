@@ -34,6 +34,7 @@ body {
     padding: 10px 25px;
     width: auto;
     text-transform: uppercase;
+    float: left;
 }
 
 .bylineBox {
@@ -253,6 +254,7 @@ body {
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include transition(height 0.4s ease);
     @include mobile {
         border-top: none;
         margin-top: 20px;
@@ -313,6 +315,9 @@ body {
     height: 30px;
     background-color: #D8E32D;
     text-align: center;
+    .fa {
+        font-size: 30px;
+    }
 }
 
 .graphicExpand-button:hover {
@@ -351,7 +356,7 @@ body {
 
 .mainSigBox {
     background-color: #000;
-    max-width: 340px;
+    max-width: 240px;
     width: 100%;
     height: auto;
     overflow: auto;
@@ -531,6 +536,11 @@ div[itemprop="articleBody"] {
     font-size: 28px;
     color: rgba(96,96,96,1.00);
     line-height: 34.3px;
+
+    .dropCap {
+        font-size: 90px;
+        color: rgba(96,96,96,1.00);
+    }
     @include mobile {
         font-size: 18px;
         color: inherit;
@@ -671,3 +681,9 @@ div[itemprop="articleBody"] {
     z-index: 100;
     background-color: rgba(2,2,2,.7);
 }
+
+// .accent_1 {
+//     font-size: 28px;
+//     color: rgba(96,96,96,1.00);
+//     font-weight: 100;
+// }

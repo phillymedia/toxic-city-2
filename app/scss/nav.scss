@@ -179,6 +179,12 @@
 
 .header {
   position: absolute;
+  section {
+      position: absolute;
+  }
+  progress {
+      position: absolute !important;
+  }
 }
 .progress {
   position: absolute;

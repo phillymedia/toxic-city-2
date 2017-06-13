@@ -52,3 +52,11 @@ function check_if_in_view() {
     $("#toxiccitynav").removeClass("showNav");
   }
 }
+
+
+$( ".graphicExpand-container" ).each(function() {
+  $(this).on("click", function(){
+      console.log($(this));
+  })
+
+});

@@ -19,8 +19,12 @@ map.scrollWheelZoom.disable();
 map.touchZoom.disable();
 
 var slider = L.timelineSliderControl({
+    steps:11,
     formatOutput: function(date) {
-        return moment(date).format('MMM Y');
+        // console.log(moment(date).format('MMM Y'));
+        // return moment(date).format('MMM Y');
+        return moment(date).format('Y');
+
     }
 });
 
@@ -35,8 +39,8 @@ var pointTimeline = L.timeline(points, {
         });
         return L.marker(latlng, {
             icon: icon,
-            start: feature.properties.start,
-            end: feature.properties.end
+            start: feature.properties.year,
+            end: feature.properties.year
         });
     },
 });
@@ -46,6 +50,8 @@ pointTimeline.on('change', function(e) {
     var current = $(".time-text").val();
     var currentYear = current.substr(current.length - 4);
     var currentYear = Number(currentYear);
+    console.log(currentYear);
+
     //i = i+1;
     //console.log(tick);
     $(".case .CONSTRUCTION").parent().css("background-color","rgb(197, 209, 118)");
@@ -59,20 +65,20 @@ pointTimeline.on('change', function(e) {
             $(this).removeClass("past");
 
         }
-        var slider_current = $('.time-slider').val(),
-            slider_min = $('.time-slider').attr("min"),
-            slider_max = $('.time-slider').attr("max"),
-            slider_gap = (slider_max-slider_min),
-            months = (12*10),
-            tick = (slider_gap / months),
-            current_dif = slider_current - slider_min,
-            current_tick = current_dif / tick,
-            leftPosition = (current_tick * (100/months)) + "%";
-            if (currentYear == 2016) {
-              // $("#trackline").css("left","90%");
-            } else {
-            //   $("#trackline").css("left",leftPosition);
-            }
+        // var slider_current = $('.time-slider').val(),
+        //     slider_min = $('.time-slider').attr("min"),
+        //     slider_max = $('.time-slider').attr("max"),
+        //     slider_gap = (slider_max-slider_min),
+        //     months = (12),
+        //     tick = (slider_gap / months),
+        //     current_dif = slider_current - slider_min,
+        //     current_tick = current_dif / tick,
+        //     leftPosition = (current_tick * (100/months)) + "%";
+        //     if (currentYear == 2016) {
+        //       // $("#trackline").css("left","90%");
+        //     } else {
+        //     //   $("#trackline").css("left",leftPosition);
+        //     }
     });
 });
 

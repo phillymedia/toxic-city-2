@@ -285,3 +285,30 @@ svg {
     opacity: 1;
     @include animation(fadeInUp 1s);
 }
+.graphic-section {
+    @include display-flex;
+    align-items: stretch;
+    @include mobile {
+        flex-wrap: wrap;
+    };
+
+    .left-section {
+        @include flex(1 1 50%);
+        padding-right: 20px;
+        @include mobile {
+             @include flex(1 1 100%);
+            height: 300px;
+        };
+    }
+
+    .right-section {
+        @include flex(1 1 40%);
+        @include display-flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    #chart-container {
+        @include flex(1 1 100%);
+    }
+}

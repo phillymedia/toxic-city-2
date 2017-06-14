@@ -31,9 +31,26 @@ function epaPopup(feature, layer) {
     }
 }
 
-
+var epa_active = L.geoJson(epa_philadelphiaData, {
+    filter: function(feature, layer) {
+        if(feature.properties.NPL == "NPL")
+        return feature.properties;
+    },
+    onEachFeature: epaPopup,
+    pointToLayer: function(feature, latlng) {
+        if (feature.properties.NPL == "NPL") {
+        return L.circleMarker(latlng, sfStyle);
+      } else {
+        return L.circleMarker(latlng, epaStyle);
+      }
+    }
+})
 
 var epa_philadelphia = L.geoJson(epa_philadelphiaData, {
+    filter: function(feature, layer) {
+        if(feature.properties.NPL !== "NPL")
+        return feature.properties;
+    },
     onEachFeature: epaPopup,
     pointToLayer: function(feature, latlng) {
         if (feature.properties.NPL == "NPL") {
@@ -71,7 +88,7 @@ mapSmelter.touchZoom.disable();
 
 
 
-L.geoJSON(smeltersData, {
+var smelstersdatajson = L.geoJSON(smeltersData, {
     onEachFeature: smelterPopup,
     pointToLayer: function(feature, latlng) {
         var industryIcon = L.divIcon({
@@ -95,19 +112,55 @@ L.geoJSON(smeltersData, {
 
 
 
+var toggle = false;
+var toggle1 = true;
+var toggle2 = true;
 
-var toggle = true;
-
-
-function togglePoints() {
+function toggleSmelters() {
     if (!toggle) {
-        mapSmelter.removeLayer(epa_philadelphia);
+        mapSmelter.removeLayer(smelstersdatajson);
     } else {
-        mapSmelter.addLayer(epa_philadelphia);
+        mapSmelter.addLayer(smelstersdatajson);
     }
     toggle = !toggle;
 }
 
-$("#smelterbutton").click(function(){
-  togglePoints();
-});
+
+function toggleEpaPhila() {
+    if (!toggle1) {
+        mapSmelter.removeLayer(epa_philadelphia);
+    } else {
+        mapSmelter.addLayer(epa_philadelphia);
+    }
+    toggle1 = !toggle1;
+}
+function toggleActivePhila() {
+    if (!toggle2) {
+        mapSmelter.removeLayer(epa_active);
+    } else {
+        mapSmelter.addLayer(epa_active);
+    }
+    toggle2 = !toggle2;
+}
+
+// $("#smelterbutton").click(function(){
+//   togglePoints();
+// });
+
+$("#smelter-map-legend .button-row").each(function() {
+    $(this).on("click", function() {
+        $(this).toggleClass("button-selected");
+
+        var getId = $(this).attr("id");
+        if(getId == "smelter-toggle-1") {
+            toggleSmelters();
+        }
+        if(getId == "smelter-toggle-2") {
+            toggleEpaPhila();
+        }
+        if(getId == "smelter-toggle-3") {
+            toggleActivePhila();
+        }
+    })
+
+})

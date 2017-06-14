@@ -14,7 +14,7 @@ var map = L.map('map-samples', {
 
 
 var data = require("./newdata.geo.json");
-var smelters_localData = require("./smelters_local.json");
+var smelters_localData = require("./newsmelters.geo.json");
 
 var byStreet = {};
 var dotList = {};
@@ -122,16 +122,24 @@ $(".marker-inner[data-score]").each(function() {
         $(this).parent().addClass("toggle400 hidetoggle");
     }
     if ($(this).attr('data-score') >= 400 && $(this).attr('data-score') <= 799.9) {
-        $(this).parent().css("background-color", "#fee090");
+        $(this).parent().css("background-color", "#fed976");
+        $(this).parent().addClass("toggle800");
+
     }
     if ($(this).attr('data-score') >= 800 && $(this).attr('data-score') <= 999.9) {
-        $(this).parent().css("background-color", "#f46d43");
+        $(this).parent().css("background-color", "#fd8d3c");
+        $(this).parent().addClass("toggle1000");
+
     }
     if ($(this).attr('data-score') >= 1000 && $(this).attr('data-score') <= 1999.9) {
-        $(this).parent().css("background-color", "#d73027");
+        $(this).parent().css("background-color", "#e31a1c");
+        $(this).parent().addClass("toggle2000");
+
     }
     if ($(this).attr('data-score') >= 2000) {
-        $(this).parent().css("background-color", "#a50026");
+        $(this).parent().css("background-color", "#800026");
+        $(this).parent().addClass("togglemax");
+
     }
 });
 
@@ -167,15 +175,42 @@ function togglePoints() {
 }
 
 
-$("#smelter-button").click(function() {
-    togglePoints();
-});
-
-$("#low-button").click(function() {
-    $(".toggle400").toggleClass("hidetoggle");
-});
+// $("#smelter-button").click(function() {
+//     togglePoints();
+// });
+//
+// $("#low-button").click(function() {
+//     $(".toggle400").toggleClass("hidetoggle");
+// });
 
 L.control.scale().addTo(map);
 
 map.scrollWheelZoom.disable();
 map.touchZoom.disable();
+
+$("#soil-map-legend .button-row").each(function() {
+    $(this).on("click", function() {
+        $(this).toggleClass("button-selected");
+
+        var getId = $(this).attr("id");
+        if(getId == "ppm-toggle-1") {
+                $(".togglemax").toggleClass("hidetoggle");
+        }
+        if(getId == "ppm-toggle-2") {
+                $(".toggle2000").toggleClass("hidetoggle");
+        }
+        if(getId == "ppm-toggle-3") {
+                $(".toggle1000").toggleClass("hidetoggle");
+        }
+        if(getId == "ppm-toggle-4") {
+                $(".toggle800").toggleClass("hidetoggle");
+        }
+        if(getId == "ppm-toggle-5") {
+                $(".toggle400").toggleClass("hidetoggle");
+        }
+        if(getId == "ppm-toggle-6") {
+            togglePoints();
+        }
+    })
+
+})

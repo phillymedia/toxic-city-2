@@ -77,3 +77,68 @@
         }
     }
 }
+
+.emphasis {
+    background-color: rgba($toxicyellow,0.3);
+    box-shadow: 4px 0 0 rgba($toxicyellow,0.3), -4px 0 0 rgba($toxicyellow,0.3);
+    font-size: 16px;
+}
+
+.legend-buttons {
+    @include display-flex;
+    width: 100%;
+    position: relative;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    font-family: $philly-sans;
+
+    .introtext {
+        font-weight: 500;
+        font-size: 18px;
+        padding-bottom: 10px;
+        @include flex(1 1 100%);
+    }
+    .button-intro {
+        @include flex(1 1 100%);
+        font-size: 14px;
+    }
+    .button-section {
+        @include display-flex;
+        flex-wrap: wrap;
+        padding: 8px 0;
+        width: 100%;
+        @include flex(1 1 100%);
+
+        .button-row {
+            @include display-flex;
+            @include flex(1 1 10%);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 10px 4px 10px;
+            border: 1px solid
+             $toxicgray;
+            border-radius: 5px;
+            margin: 2px;
+            @include box-shadow(0px 2px 6px 0px $toxicgray);
+            font-size: 14px;
+            font-weight: 500;
+
+            @extend %noselect;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #eee;
+                @include box-shadow(none);
+                color: #222;
+            }
+        }
+
+        .button-selected {
+            @include box-shadow(inset 0 0 1px 1px $toxicgray);
+            opacity: 0.6;
+            color: gray;
+            background-color: #eee;
+        }
+    }
+}

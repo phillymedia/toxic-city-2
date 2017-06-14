@@ -34,6 +34,14 @@
   height: 20px;
   display: inline-block;
   vertical-align: bottom;
+
+}
+
+.soil-location {
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    vertical-align: middle;
 }
 
 .radiusLegend {
@@ -132,7 +140,9 @@
 }
 
 .toggle400 {
-  display: none;
+}
+.hidetoggle {
+    display: none !important;
 }
 
 .toggle-button:hover {
@@ -182,6 +192,20 @@ span svg {
 }
 
 #soilmapgraphic {
+    .legend {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .legend-row {
+        font-size: 14px;
+        font-weight: normal;
+        &:first-child{
+            padding-top: 8px;
+        }
+    }
+    .graphic-section {
+        margin-bottom: 10px;
+    }
   .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive {
     pointer-events: auto !important;
   }
@@ -195,7 +219,7 @@ span svg {
   }
   .left-section {
     @include flex(1 1 60%);
-    padding-right: 30px;
+    padding-right: 20px;
     @include mobile {
         @include flex(1 1 100%);
         padding: 0;
@@ -206,6 +230,7 @@ span svg {
   .right-section {
     align-items: flex-start;
     align-content: flex-start;
+    overflow: hidden;
   }
   .legend {
     text-align: left;
@@ -224,4 +249,154 @@ span svg {
 }
 #low-button {
   z-index: 0;
+}
+
+.soil-icon {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+.sortListContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .flexrowHead {
+        @include display-flex;
+        @include flex(1 1 100%);
+        justify-content: space-between;
+        padding: 2px 10px;
+        border-bottom: 2px solid #ccc;
+        position: relative;
+
+        .flexname {
+            font-family: $philly-sans;
+            font-size: 15px;
+            padding-left: 8px;
+            font-weight: 900;
+        }
+
+        .flexresult {
+            font-family: $philly-sans;
+            font-size: 15px;
+            font-weight: 900;
+            padding-right: 6px;
+        }
+
+        .inline-marker {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 100px;
+            align-self: flex-start;
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+        }
+
+
+    }
+
+}
+.sortList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // max-height: 400px;
+    overflow: scroll;
+    @include display-flex;
+    flex-wrap: wrap;
+    // padding-top: 20px;
+    padding-bottom: 25px;
+    @include mobile {
+        position: relative;
+        max-height: 200px;
+        margin-bottom: 1px;
+        border-bottom: 1px solid gray;
+    };
+
+
+    .flexrow {
+        @include display-flex;
+        @include flex(1 1 100%);
+        justify-content: space-between;
+        padding: 2px 10px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+        position: relative;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: #eee;
+        }
+
+        .flexname {
+            font-family: $philly-sans;
+            font-size: 14px;
+            padding-left: 8px;
+        }
+
+        .flexresult {
+            font-family: monospace;
+            padding-right: 6px;
+        }
+
+        .inline-marker {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 100px;
+            align-self: flex-start;
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+        }
+
+
+    }
+
+    &:after {
+
+    }
+}
+
+.popupHead {
+    font-family: $philly-sans;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    .intro {
+        font-size: 13px;
+        font-weight: 200;
+        display: block;
+        text-transform: uppercase;
+        line-height: 1;
+        color: gray;
+
+    }
+}
+ul.sampleList {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    font-size: 13px;
+
+    li.highppm {
+        color: $philly-red;
+    }
+
+    li {
+        border-top: 1px solid #eee;
+        padding: 3px 0;
+        margin: 0;
+    }
 }

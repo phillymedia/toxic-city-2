@@ -174,8 +174,17 @@ body {
 }
 
 .spaceTB {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding:0 !important;
+    margin: 40px 0 40px 0;
+    .col {
+        padding: 0px !important;
+    }
+
+    @include mobile {
+        margin: 0px 0 30px 0;
+    }
 }
 
 .right.carousel-control {
@@ -521,13 +530,6 @@ div[itemprop="articleBody"] {
     font-weight: 100;
     padding-left: 3px;
     font-family: $philly-serif;
-    @include mobile {
-        font-size: 40px;
-        line-height: 35px;
-        color: white;
-        margin: 7px 8px 0 0;
-        font-weight: 400;
-    }
 }
 
 .dropCapFirst {
@@ -644,9 +646,15 @@ div[itemprop="articleBody"] {
 
 .dropdown-nav p {
     line-height: 1.4;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
     font-family: $philly-sans;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    font-smoothing: auto;
+    text-rendering: auto;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .dropTitle-nav,
@@ -662,6 +670,9 @@ div[itemprop="articleBody"] {
     color: #f3f6f9;
     font-size: 14px;
     padding: 8% 0;
+    a {
+        color: #f3f6f9;
+    }
 }
 
 .dropChapter-nav span,

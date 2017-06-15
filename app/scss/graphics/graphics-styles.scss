@@ -1,30 +1,34 @@
 .graphicWrapper {
-    padding: 25px 0;
-    margin: 0 auto 50px;
+    padding: 15px 0 25px 0;
+    // margin: 0 0 50px;
+    margin-bottom: 50px;
     font-family: $philly-sans;
     @include mobile {
-        padding: 25px 0;
+        padding: 0 0 30px 0;
+        margin: 0;
     };
-    // &::before {
-    //   content: "";
-    //   border-top: 3px solid $toxicyellow;
-    //   display: block;
-    //   width: 80%;
-    //   margin: 0 auto;
-    //   height: 2px;
-    //   padding-bottom: 25px;
-    //   @include mobile {
-    //       width: 100%;
-    //   };
-    // }
+
 }
 
 .heading {
     margin: 10px 0 20px 0;
-    font-size: 26px;
+    padding: 0 20px;
+    font-size: 20px;
     font-weight: 900;
     border-bottom: 3px solid $toxicyellow;
+    width: auto;
+    display: inline-block;
+    text-transform: uppercase;
     // text-align: center;
+    @include mobile {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    };
+    @include BS-medium {
+        margin-left: -20px;
+    }
+
 }
 
 .textsection {
@@ -35,9 +39,13 @@
 .description {
     padding: 0;
     margin: 0;
-    font-family: $philly-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: $philly-sans;
+    font-size: 18px !important;
+    line-height: 1.4;
+    font-weight: normal;
+    @include BS-medium {
+        padding-right: 50px;
+    }
 }
 
 .source {
@@ -63,13 +71,13 @@
     height: 100%;
 
     .map-inner {
-        // padding-bottom: percentage(10/10);
+        padding-bottom: percentage(10/10);
         position: relative;
         display: block;
         height: 100%;
 
         .leaflet-map {
-            position: absolute;
+            position: absolute !important;
             top: 0;
             left: 0;
             width: 100%;
@@ -95,8 +103,17 @@
     .introtext {
         font-weight: 500;
         font-size: 18px;
-        padding-bottom: 10px;
+        // padding-bottom: 10px;
         @include flex(1 1 100%);
+
+        @include BS-medium {
+            padding-right: 50px;
+        }
+
+        .emphasis {
+            margin: 10px 0;
+            display: inline-block;
+        }
     }
     .button-intro {
         @include flex(1 1 100%);
@@ -123,6 +140,8 @@
             @include box-shadow(0px 2px 6px 0px $toxicgray);
             font-size: 14px;
             font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.4px;
 
             @extend %noselect;
             cursor: pointer;

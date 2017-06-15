@@ -124,14 +124,33 @@ span svg {
 
 #smelterGraphic {
   .left-section {
-    @include flex(1 1 35%);
-    padding-right: 40px;
+    @include flex(1 1 50%);
+    padding-right: 20px;
+    @include display-flex;
+    align-items: stretch;
+    align-content: stretch;
 
-    @include mobile {
+    @include tablet {
         @include flex(1 1 100%);
         padding: 0;
     };
   }
+}
+
+.testingmapsection {
+    position: relative;
+    @include flex(1 1 100%);
+    #map-smelter {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
 }
 
 #map-smelter {

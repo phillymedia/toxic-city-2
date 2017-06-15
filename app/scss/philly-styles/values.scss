@@ -94,6 +94,11 @@ $toxicgray: #d5d5d5;
     -ms-flex-line-pack: $flex;
     align-content: $flex;
 }
+@mixin align-items($flex...) {
+    -webkit-align-content: $flex;
+    -ms-flex-line-pack: $flex;
+    align-content: $flex;
+}
 @mixin order($flex...) {
     -webkit-order: $flex;
     -ms-flex-order: $flex;

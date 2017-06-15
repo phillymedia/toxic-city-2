@@ -1,7 +1,6 @@
 $toxicyellow: #e9f070;
 $toxicgreen: #dae255;
 $toxicgray: #d5d5d5;
-
 @import 'longform-styles';
 @import 'philly-styles/values';
 @import 'toxiccity';
@@ -10,14 +9,13 @@ $toxicgray: #d5d5d5;
 @import 'graphics/permit-map';
 @import 'graphics/smelter-map';
 @import 'graphics/soil-map';
-
 $toxicyellow: #e9f070;
 $toxicgreen: #dae255;
 $toxicgray: #d5d5d5;
 
 svg {
-  max-width: none !important;
-  max-height: none !important;
+    max-width: none !important;
+    max-height: none !important;
 }
 
 %smoothing {
@@ -29,64 +27,60 @@ svg {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 .heroText-outer {
-  position: absolute;
-  // height: 100vh;
-  // width: 100vw;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-
-  @include display-flex;
-  z-index: 1;
-  align-items: flex-end;
-  align-content: center;
-  // justify-content: center;
-  flex-wrap: wrap;
-
-  .heroText {
-    z-index: 5;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    .hero-headline {
-      color: #fff;
-      font-family: $philly-sans;
-      font-weight: 600;
-      letter-spacing: -2px;
-      line-height: normal;
-      text-shadow: 0 0 10px #000;
-      font-size: 68px;
-      margin: 10px 0 0 0;
-    }
-  }
-
-  // .hero-headline {
-  //   @include flex(1 1 100%);
-  //   text-align: center;
-  //
-  // }
-  .mainSigBox {
-    margin: 0;
-  }
-
-  &::before {
-    content: "";
     position: absolute;
-    top: 0;
+    // height: 100vh;
+    // width: 100vw;
     left: 0;
-    width: 100%;
-    height: 100%;
-    // background: rgba(black,0.2);
-    background-image:linear-gradient(to bottom left, transparent 45%, black);
-    opacity: 0.8;
-    background-attachment: fixed;
-  }
-}
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @include display-flex;
+    z-index: 1;
+    align-items: flex-end;
+    align-content: center;
+    // justify-content: center;
+    flex-wrap: wrap;
 
+    .heroText {
+        z-index: 5;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+
+        .hero-headline {
+            color: #fff;
+            font-family: $philly-sans;
+            font-weight: 600;
+            letter-spacing: -2px;
+            line-height: normal;
+            text-shadow: 0 0 10px #000;
+            font-size: 68px;
+            margin: 10px 0 0;
+        }
+    }
+    // .hero-headline {
+    //   @include flex(1 1 100%);
+    //   text-align: center;
+    //
+    // }
+    .mainSigBox {
+        margin: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background: rgba(black,0.2);
+        background-image: linear-gradient(to bottom left, transparent 45%, black);
+        opacity: 0.8;
+        background-attachment: fixed;
+    }
+}
 // .leaflet-pane {
 //   z-index: 100 !important;
 // }
@@ -102,13 +96,12 @@ svg {
 // }
 
 .col-md-10:first-child {
-
-        // margin-top: 30px !important;
-
+    // margin-top: 30px !important;
 }
 
 .fullimage {
     padding: 0 !important;
+
     .col {
         padding: 0 !important;
     }
@@ -124,18 +117,15 @@ svg {
     border-top: 4px solid $toxicgreen;
     @extend %smoothing;
     max-width: 250px;
-    margin: 0 30px 10px 0px;
-
+    margin: 0 30px 10px 0;
     @include mobile {
         max-width: 100%;
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
     }
-
     @include BS-medium {
         max-width: 300px;
         margin: 0 40px 20px -75px;
     }
-
     @include BS-large {
         max-width: 35%;
         margin: 0 40px 20px -100px;
@@ -150,8 +140,8 @@ svg {
         padding-bottom: 10px;
         // color: white;
         color: #333;
-
     }
+
     a {
         font-family: $philly-sans;
         font-weight: 600;
@@ -162,14 +152,12 @@ svg {
         cursor: pointer;
         @include transition(color .5s ease);
 
-
         &:hover {
             text-decoration: none;
             color: $toxicyellow;
             @include transition(color .5s ease);
         }
     }
-
 }
 
 .sidebar {
@@ -232,17 +220,16 @@ svg {
 
 .checklist {
     list-style: none !important;
+
     li {
         &::before {
-            content:"\f046";
+            content: "\f046";
             font-family: fontAwesome;
             display: inline-block;
             margin-left: -20px;
             margin-right: 4px;
-
         }
     }
-
 }
 
 .expander {
@@ -293,6 +280,7 @@ svg {
         @include transform(translatex(0));
     }
 }
+
 .lazyload {
     opacity: 0;
 }
@@ -301,6 +289,7 @@ svg {
     opacity: 1;
     @include animation(fadeInUp 1s);
 }
+
 .graphic-section {
     @include display-flex;
     align-items: stretch;
@@ -313,7 +302,6 @@ svg {
         @include flex(1 1 50%);
         padding-right: 20px;
         position: relative;
-
         @include tablet {
              @include flex(1 1 100%);
             height: 300px;
@@ -337,4 +325,62 @@ svg {
     height: 60vh;
     background-color: #eee;
     margin: 20px 0;
+}
+
+.sidebyside {
+    @include display-flex;
+    flex-wrap: wrap;
+
+    .sidebarImage {
+        @include flex(1 1 20%);
+        margin-right: 5px;
+
+        &:nth-child(3) {
+            margin: 0;
+        }
+    }
+
+    .containerPhotoCaption,
+    .containerPhotoCredit {
+        @include flex(1 1 100%);
+    }
+    @include tablet {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        margin-top: 0;
+
+        .sidebarImage {
+            margin: 0 0 3px 20px !important;
+        }
+    }
+    @include mobile {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 0;
+
+        .sidebarImage {
+            margin: 0 20px 10px !important;
+        }
+    }
+}
+
+.wide-right {
+
+    max-width: 100%;
+    float: none;
+    padding: 0 !important;
+    margin: 10px 0 30px 0;
+
+    @include BS-medium {
+        margin-right: -15vw;
+            width: 80% !important;
+            margin-left: 20px;
+    }
+    @include BS-large {
+        margin-right: -22vw;
+        width: 80% !important;
+        margin-left: 20px;
+    }
 }

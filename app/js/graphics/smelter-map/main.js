@@ -1,5 +1,5 @@
 var smeltersData = require("./philadelphia-smelters.json");
-var epa_philadelphiaData = require("./epa_philadelphia.json");
+var newEpa = require("./new_epasites.geo.json")
 // require("./groupedlayercontrol");
 
 
@@ -31,35 +31,60 @@ function epaPopup(feature, layer) {
     }
 }
 
-var epa_active = L.geoJson(epa_philadelphiaData, {
+
+
+var archiveStyle = {
+    radius: 4,
+    fillColor: "rgb(197, 209, 118)",
+    fillOpacity: .8,
+    opacity: 1,
+    weight: 1,
+    color:  "rgb(197, 209, 118)"
+
+};
+
+var activeStyle = {
+    radius: 4,
+    fillColor: "#ff751a",
+    fillOpacity: .8,
+    opacity: 1,
+    weight: 1,
+    color:  "#ff751a"
+};
+
+
+var epa_active = L.geoJson(newEpa, {
     filter: function(feature, layer) {
-        if(feature.properties.NPL == "NPL")
+        if (feature.properties.active == "Y" || feature.properties.active !== "No")
         return feature.properties;
     },
     onEachFeature: epaPopup,
     pointToLayer: function(feature, latlng) {
-        if (feature.properties.NPL == "NPL") {
-        return L.circleMarker(latlng, sfStyle);
+        if (feature.properties.active == "Y" || feature.properties.active !== "No") {
+        return L.circleMarker(latlng, activeStyle);
       } else {
-        return L.circleMarker(latlng, epaStyle);
+        return L.circleMarker(latlng, archiveStyle);
       }
     }
 })
 
-var epa_philadelphia = L.geoJson(epa_philadelphiaData, {
+var epa_archived = L.geoJson(newEpa, {
     filter: function(feature, layer) {
-        if(feature.properties.NPL !== "NPL")
+        if(feature.properties.active == "No" || feature.properties.active !== "Y")
         return feature.properties;
     },
     onEachFeature: epaPopup,
     pointToLayer: function(feature, latlng) {
-        if (feature.properties.NPL == "NPL") {
-        return L.circleMarker(latlng, sfStyle);
+        if(feature.properties.active == "No" || feature.properties.active !== "Y") {
+        return L.circleMarker(latlng, archiveStyle);
       } else {
-        return L.circleMarker(latlng, epaStyle);
+        return L.circleMarker(latlng, activeStyle);
       }
     }
 });
+
+
+
 
 
 
@@ -126,11 +151,11 @@ function toggleSmelters() {
 }
 
 
-function toggleEpaPhila() {
+function toggleEpaArchived() {
     if (!toggle1) {
-        mapSmelter.removeLayer(epa_philadelphia);
+        mapSmelter.removeLayer(epa_archived);
     } else {
-        mapSmelter.addLayer(epa_philadelphia);
+        mapSmelter.addLayer(epa_archived);
     }
     toggle1 = !toggle1;
 }
@@ -156,10 +181,11 @@ $("#smelter-map-legend .button-row").each(function() {
             toggleSmelters();
         }
         if(getId == "smelter-toggle-2") {
-            toggleEpaPhila();
+            toggleActivePhila();
         }
         if(getId == "smelter-toggle-3") {
-            toggleActivePhila();
+            toggleEpaArchived();
+
         }
     })
 

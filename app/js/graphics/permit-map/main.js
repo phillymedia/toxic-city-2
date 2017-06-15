@@ -84,3 +84,8 @@ pointTimeline.on('change', function(e) {
 
 
 slider.addTimelines(pointTimeline);
+
+
+$("#playToggle").on("click", function(){
+    $(".play").click();
+})

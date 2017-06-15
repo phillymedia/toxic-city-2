@@ -320,14 +320,14 @@
                 "City": "PHILADELPHIA",
                 "State": "Pa",
                 "Zip": 19143,
-                "Latitude": 39.957743,
-                "Longitude": -75.219266,
+                "Latitude": 39.938694,
+                "Longitude": -75.210228,
                 "NPL": "Non-NPL",
                 "SiteStatus": "Other Cleanup Activity: State-Lead Cleanup"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-75.219266, 39.957743]
+                "coordinates": [-75.210228, 39.938694]
             }
         },
         {

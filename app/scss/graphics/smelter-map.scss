@@ -123,6 +123,11 @@ span svg {
 }
 
 #smelterGraphic {
+    .graphic-section {
+        @include tablet {
+            flex-wrap: wrap;
+        };
+    }
   .left-section {
     @include flex(1 1 50%);
     padding-right: 20px;
@@ -149,8 +154,6 @@ span svg {
         width: 100%;
         height: 100%;
     }
-
-
 }
 
 #map-smelter {

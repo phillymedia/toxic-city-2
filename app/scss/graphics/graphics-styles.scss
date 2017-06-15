@@ -19,6 +19,7 @@
     width: auto;
     display: inline-block;
     text-transform: uppercase;
+    color: #444;
     // text-align: center;
     @include mobile {
         margin: 0;
@@ -40,8 +41,9 @@
     padding: 0;
     margin: 0;
     font-family: $philly-sans;
-    font-size: 18px !important;
+    font-size: 16px !important;
     line-height: 1.4;
+    color: #444;
     font-weight: normal;
     @include BS-medium {
         padding-right: 50px;
@@ -132,7 +134,7 @@
             text-align: center;
             align-items: center;
             justify-content: center;
-            padding: 8px 10px 4px 10px;
+            padding: 12px 10px 8px 10px;
             border: 1px solid
              $toxicgray;
             border-radius: 5px;

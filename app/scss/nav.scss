@@ -2,18 +2,19 @@
 
 #toxiccitynav {
   position: fixed;
-  z-index: 9999;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: auto;
   background: rgba(#111, 0.85);
-  align-items: stretch;
-  justify-content: space-between;
+  // align-items: stretch;
+  // justify-content: space-between;
   opacity: 0;
   padding: 10px 0;
   @include display-flex;
-  @include transition(all 1s ease);
-  @include transform(translateY(-100px));
+  // @include transition(all 1s ease);
+  // @include transform(translateY(-100px));
 
   a {
     cursor: pointer;

@@ -222,7 +222,7 @@ span svg {
   .left-section {
     @include flex(1 1 60%);
     padding-right: 20px;
-    @include mobile {
+    @include tablet {
         @include flex(1 1 100%);
         padding: 0;
         margin-bottom: 15px;
@@ -230,9 +230,13 @@ span svg {
     };
   }
   .right-section {
-    align-items: flex-start;
-    align-content: flex-start;
+    // align-items: flex-start;
+    // align-content: flex-start;
     overflow: hidden;
+    @include display-flex;
+    position: relative;
+    // align-items: stretch;
+    // align-content: stretch;
   }
   .legend {
     text-align: left;
@@ -261,7 +265,11 @@ span svg {
     border-radius: 100px;
 }
 .sortListContainer {
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
 
@@ -314,12 +322,13 @@ span svg {
         width: 100%;
         height: 20px;
         // background: rgba(white,0.5);
-        background-image: linear-gradient(to bottom, transparent, white);
+        background-image: linear-gradient(to bottom, rgba(white,0), white);
         border-bottom: 1px solid $toxicgray;
     }
 
 }
 .sortList {
+    @include flex(1 1 100%);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -414,4 +423,12 @@ ul.sampleList {
         padding: 3px 0;
         margin: 0;
     }
+}
+
+#soil-map-legend {
+    .button-row {
+        min-width: 150px;
+        @include flex(0 1 150px);
+    }
+
 }

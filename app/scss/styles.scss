@@ -33,10 +33,13 @@ svg {
 
 .heroText-outer {
   position: absolute;
-  height: 130vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
+
   @include display-flex;
   z-index: 1;
   align-items: flex-end;
@@ -46,16 +49,17 @@ svg {
 
   .heroText {
     z-index: 5;
-    padding-left: 10vw;
-    padding-bottom: 40vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
     .hero-headline {
       color: #fff;
       font-family: $philly-sans;
       font-weight: 600;
-      letter-spacing: -5px;
+      letter-spacing: -2px;
       line-height: normal;
-      text-shadow: 0 0 15px #000;
-      font-size: 80px;
+      text-shadow: 0 0 10px #000;
+      font-size: 68px;
       margin: 10px 0 0 0;
     }
   }
@@ -99,15 +103,24 @@ svg {
 
 .col-md-10:first-child {
 
-        margin-top: 30px !important;
+        // margin-top: 30px !important;
 
+}
+
+.fullimage {
+    padding: 0 !important;
+    .col {
+        padding: 0 !important;
+    }
 }
 
 .relatedLinks {
     float: left;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    // background-color: #333;
+    // color: white;
+    background-color: #eee;
+    color: #333;
     border-top: 4px solid $toxicgreen;
     @extend %smoothing;
     max-width: 250px;
@@ -115,11 +128,11 @@ svg {
 
     @include mobile {
         max-width: 100%;
+        margin: 0 0 20px 0;
     }
 
     @include BS-medium {
         max-width: 300px;
-
         margin: 0 40px 20px -75px;
     }
 
@@ -135,12 +148,15 @@ svg {
         letter-spacing: 1px;
         font-family: $philly-sans;
         padding-bottom: 10px;
-        color: white;
+        // color: white;
+        color: #333;
+
     }
     a {
         font-family: $philly-sans;
         font-weight: 600;
-        color: white;
+        // color: white;
+        color: #333;
         font-size: 15px;
         line-height: 1.1;
         cursor: pointer;
@@ -288,6 +304,7 @@ svg {
 .graphic-section {
     @include display-flex;
     align-items: stretch;
+    align-content: stretch;
     @include mobile {
         flex-wrap: wrap;
     };
@@ -295,7 +312,9 @@ svg {
     .left-section {
         @include flex(1 1 50%);
         padding-right: 20px;
-        @include mobile {
+        position: relative;
+
+        @include tablet {
              @include flex(1 1 100%);
             height: 300px;
         };

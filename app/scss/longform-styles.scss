@@ -61,10 +61,14 @@
         min-height: 0;
         height: 70vh;
         position: relative;
-        background-attachment: local; 
+        background-attachment: fixed;
+        @include tablet {
+            background-attachment: local;
+            background-position: left 25% center !important;
+
+        };
 
         @include mobile {
-            background-size: cover;
             background-position: left 25% center !important;
         };
     }

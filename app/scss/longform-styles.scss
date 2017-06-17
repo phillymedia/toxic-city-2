@@ -403,18 +403,18 @@ p {
     }
 }
 
-.bodyContainer p {
+.container p {
     a {
         cursor: pointer;
-        color: #0061A2;
-        box-shadow: inset -2px -5px 0 -2px #d5eeff;
+        color: #000;
+        box-shadow: inset -2px -5px 0 -2px $toxicyellow;
         @include transition(box-shadow 0.3s cubic-bezier(0.86, 0, 0.07, 1));
     }
 }
 
-.bodyContainer p {
+.container p {
     a:hover {
-        box-shadow: inset -2px -20px 0 -3px #d5eeff;
+        box-shadow: inset -2px -20px 0 -3px $toxicyellow;
         text-decoration: none;
     }
 }
@@ -458,13 +458,11 @@ p {
 }
 
 .creditSection {
-    @include display-flex;
-    @include flex(1 1 100%);
-    flex-wrap: wrap;
+
     background-color: #eee;
     padding: 30px 0;
     margin: 30px 0 0 0;
-    justify-content: center;
+
 
 
     .creditRow {

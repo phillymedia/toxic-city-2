@@ -169,7 +169,10 @@ svg {
 }
 
 .fullimage {
-    padding: 0 !important;
+
+    @include tablet {
+        padding: 0 !important;
+    };
 
     .col {
         padding: 0 !important;
@@ -440,15 +443,28 @@ svg {
     float: none;
     padding: 0 !important;
     margin: 10px 0 30px;
+    .imagebreak {
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 30px;
+    }
+    @include tablet {
+        .imagebreak {
+            padding-left: 0;
+        }
+    };
     @include BS-medium {
         margin-right: -15vw;
         width: 80% !important;
         margin-left: 20px;
+
     }
     @include BS-large {
         margin-right: -22vw;
         width: 80% !important;
         margin-left: 20px;
+        margin-top: 0;
+
     }
 }
 //jared's css
@@ -525,4 +541,20 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.creditSection {
+    color: #444;
+    padding-left: 15px;
+    padding-right: 15px;
+    h4 {
+        font-family: $philly-serif;
+        font-weight: bold;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    p {
+        font-size: 16px;
+        line-height: normal;
+    }
 }

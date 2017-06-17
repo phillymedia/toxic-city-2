@@ -11,6 +11,7 @@ $(document).ready(function() {
     require("./graphics/permit-map/main");
     require("./graphics/smelter-map/main");
     require("./graphics/soil-map/main");
+
     $(window).on('scroll resize', _.throttle(check_if_in_view, 100));
 
     $("#openMenu").click(function() {
@@ -31,13 +32,10 @@ $(document).ready(function() {
     });
 
 
-
     function check_if_in_view() {
         var window_height = $(window).height();
         var window_top_position = $(window).scrollTop();
         var window_bottom_position = (window_top_position + window_height);
-
-        var backgroundImage = $("#backgroundImage-1");
 
         $('.lazyload').each(function() {
             var $element = $(this);
@@ -57,6 +55,30 @@ $(document).ready(function() {
         } else {
             $("#toxiccitynav").removeClass("showNav");
         }
+
+        $(".video-transition").each(function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+
+
+            if ((element_top_position <= window_bottom_position) && $(this).attr("class") !== "video-transition playedinview") {
+                $(this).load();
+                $(this)[0].play();
+                $(this).addClass("playedinview");
+                $(this).attr('autoplay', true);
+            }
+
+        })
+
+        // $('video').each(function(){
+        //     if ($(this).visible( true )) {
+        //         $(this)[0].play();
+        //     } else {
+        //         $(this)[0].pause();
+        //     }
+        // })
+
     }
 
 
@@ -106,20 +128,6 @@ $(document).ready(function() {
 
 
 !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
-
-if($(window).width() >= 800){
-  $(window).scroll(function() {
-  $('video').each(function(){
-      if ($(this).visible( true )) {
-          $(this)[0].play();
-      } else {
-          $(this)[0].pause();
-      }
-  })
-  });
-	}
-
-
 
 
 

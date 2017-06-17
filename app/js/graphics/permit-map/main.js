@@ -50,7 +50,6 @@ pointTimeline.on('change', function(e) {
     var current = $(".time-text").val();
     var currentYear = current.substr(current.length - 4);
     var currentYear = Number(currentYear);
-    console.log(currentYear);
 
     //i = i+1;
     //console.log(tick);

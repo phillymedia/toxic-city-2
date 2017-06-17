@@ -39,7 +39,7 @@
   }
 
   .toxic-logo-section {
-    @include flex(0 0 301px);
+    @include flex(0 0 350px);
     @include display-flex;
     color: white;
     font-family: $philly-sans;
@@ -49,7 +49,7 @@
     padding-left: 20px;
     // margin: 5px 0;
     @include tablet {
-      @include flex(0 0 144px);
+      @include flex(0 0 155px);
     }
     @include size600 {
       @include flex(1 1 50%);

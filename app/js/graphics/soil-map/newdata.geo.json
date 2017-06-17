@@ -7075,6 +7075,31 @@
           39.9806902
         ]
       }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "SampleDt": "12/22/16",
+      "SampleNum": 1,
+      "crossStree": "E Thompson St & E Huntingdon St",
+      "siteName": "",
+      "city": "Philadelphia",
+      "State": "PA",
+      "ZipCode": 19125,
+      "nonNumResult":  2903.8,
+      "result": 2903.8,
+      "Can use Y/": "Y",
+      "SiteType": "Soil (ppm)",
+      "addrtype": "intersection",
+      "addrlocat": "APPROXIMATE"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+         -75.117248,
+        39.977280
+      ]
     }
+  }
   ]
 }

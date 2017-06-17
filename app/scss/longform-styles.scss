@@ -7,7 +7,7 @@
 }
 
 #backgroundImage-1 {
-    background-image: url("../css/RS615545_LEADXX-II_376536582.JPG");
+    background-image: url("http://media.philly.com/images/RS_2400x1600_20170616_LEADXX_II_376536582.JPG");
     // background-position: left 50% top 79px;
     // @include tablet {
     //     // background-position: left 50% top 49px;
@@ -26,10 +26,18 @@
 
 
 .backgroundImage {
+    overflow: hidden;
     position: relative;
     width: auto;
+    // height: 400px;
+    // height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    height: 100vh;
+    width: 100%;
     // min-height: 750px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,12 +49,24 @@
     //     height: auto;
     //     padding-bottom: percentage(800/1200)-5;
     // }
+    @include mobile {
+        background-size: contain;
+        height: 320px;
+        position: relative;
+        background-color: white;
+    };
 }
 .footerimage {
     .backgroundImage {
         min-height: 0;
-        height: 60vh;
+        height: 70vh;
+        position: relative;
+        background-attachment: local; 
 
+        @include mobile {
+            background-size: cover;
+            background-position: left 25% center !important;
+        };
     }
 }
 

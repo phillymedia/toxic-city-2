@@ -28,25 +28,39 @@ svg {
 }
 
 .heroText-outer {
-    position: absolute;
+    position: relative;
     // height: 100vh;
     // width: 100vw;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    // left: 0;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    min-height: 100vh;
     @include display-flex;
     z-index: 1;
-    align-items: flex-end;
+    align-items: center;
     align-content: center;
     // justify-content: center;
     flex-wrap: wrap;
+    @include mobile {
+        min-height: inherit;
+        position: relative;
+    };
 
     .heroText {
         z-index: 5;
         padding-left: 40px;
         padding-right: 40px;
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
+        padding-top: 14vh;
+        @include mobile {
+            padding: 0;
+        };
+        @include BS-medium {
+            padding-left: 10vw;
+            padding-right: 8vw;
+            padding-top: 20vh;
+        };
 
         .hero-headline {
             color: #fff;
@@ -57,6 +71,50 @@ svg {
             text-shadow: 0 0 10px #000;
             font-size: 68px;
             margin: 10px 0 0;
+            line-height: 1.1;
+            @include tablet {
+                font-size: 55px;
+            };
+            @include mobile {
+                font-size: 42px;
+                line-height: normal;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-shadow: none;
+                color: #222;
+            };
+            @include BS-large {
+                font-size: 76px;
+            };
+        }
+    }
+
+    .heroSubhead {
+        // align-self: flex-end;
+        padding-bottom: 50px;
+        padding-top: 0;
+        @include mobile {
+            padding-bottom: 0;
+        };
+
+        .hero-headline-subhead {
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: normal;
+            // margin-top: 40px;
+            font-family: $philly-serif;
+            padding-bottom: 20px;
+            @include mobile {
+                font-size: 20px;
+            };
+        }
+
+        .inlineByline {
+            font-style: normal;
+            font-size: 20px;
+            @include mobile {
+                font-size: 18px;
+            };
         }
     }
     // .hero-headline {
@@ -75,10 +133,21 @@ svg {
         left: 0;
         width: 100%;
         height: 100%;
-        // background: rgba(black,0.2);
-        background-image: linear-gradient(to bottom left, transparent 45%, black);
+        background: rgba(black,0.2);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, black);
+        background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, black);
+        /* Chrome10-25, Saf5.1-Saf6, iOS -6.1, Android -4.3 */
+        background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, black);
+        /* Fx3.6-15 */
+        background-image: -o-linear-gradient( to bottom, rgba(0, 0, 0, 0.2) 10%, black);
+        /* Op11.10-12.02 */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, black);
+        /* W3C, Fx16+, Chrome26+, IE10+, Op12.10+, Saf6.1+ */
         opacity: 0.8;
         background-attachment: fixed;
+        @include mobile {
+            background: none;
+        };
     }
 }
 // .leaflet-pane {
@@ -367,16 +436,14 @@ svg {
 }
 
 .wide-right {
-
     max-width: 100%;
     float: none;
     padding: 0 !important;
-    margin: 10px 0 30px 0;
-
+    margin: 10px 0 30px;
     @include BS-medium {
         margin-right: -15vw;
-            width: 80% !important;
-            margin-left: 20px;
+        width: 80% !important;
+        margin-left: 20px;
     }
     @include BS-large {
         margin-right: -22vw;
@@ -384,10 +451,59 @@ svg {
         margin-left: 20px;
     }
 }
-
-
 //jared's css
 
 .video-transition {
-  width: 100%;
+    width: 100%;
+    margin: 40px 0 0;
+    @include mobile {
+        display: none;
+    };
+}
+
+.background-video {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom 50%;
+    top: 0;
+    left: 0;
+}
+
+.bigtransitionphoto {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    .imageHolder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('http://media.philly.com/images/RS_2400x1600_20170616_LEADXX_GG_376452142.JPG');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+.bigtext {
+    font-size: 20px;
+    font-family: $philly-sans;
+    line-height: 1.4;
+    font-weight: 500;
+
+    a {
+        font-size: 22px;
+    }
+}
+
+.margin-top {
+    margin-top: 50px;
+    @include mobile {
+        margin-top: 0;
+    };
 }

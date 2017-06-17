@@ -1,79 +1,74 @@
 <div class="row">
     <div class="col-md-10 col col-md-offset-1">
-<div id="permit-map-graphic" class="graphicWrapper">
-    <div class="textsection">
-        <!-- <div class="row">
-            <div class="col-md-10 col col-md-offset-1"> -->
-                <h3 class="heading">Fishtown’s Construction Boom
+        <div id="permit-map-graphic" class="graphicWrapper">
+            <div class="textsection">
+
+                <h3 class="heading">The Construction Boom
 </h3>
-                <p class="description">Fishtown’s continued revival has added swank cafes and spruced-up parks to this former industrial neighborhood north of Center City. Its newfound appeal can be seen in the surge of construction and demolition permits as builders race to meet demand for new homes nearly unmatched in Philadelphia. Building fever has also disturbed contaminated soil, sending hazardous lead dust onto playgrounds and stoops.</p>
-            <!-- </div>
-        </div> -->
-        <div class="legend">
-            <div class="legend-row">
-                <div class="conLegend">&zwj;</div> Construction permit</div>
-            <div class="legend-row">
-                <div class="demoLegend">&zwj;</div> Demolition permit</div>
-        </div>
-    </div>
+                <p class="description">The river wards' continued revival has added swank cafes and spruced-up parks to this former industrial neighborhood north of Center City. Its newfound appeal can be seen in the surge of construction and demolition permits as builders
+                    race to meet demand for new homes nearly unmatched in Philadelphia. Building fever has also disturbed contaminated soil, sending hazardous lead dust onto playgrounds and stoops.</p>
+
+                <div class="legend">
+                    <div class="legend-row">
+                        <div class="conLegend">&zwj;</div> Construction permit</div>
+                    <div class="legend-row">
+                        <div class="demoLegend">&zwj;</div> Demolition permit</div>
+                </div>
+            </div>
 
 
-    <div class="graphic-section">
-        <div class="left-section">
-            <div class="map-outer">
-                <div class="map-inner">
-                    <div id="map-permits" class="leaflet-map">
+            <div class="graphic-section">
+                <div class="left-section">
+                    <div class="map-outer">
+                        <div class="map-inner">
+                            <div id="map-permits" class="leaflet-map">
+                                &zwj;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="legend-buttons">
+                        <div class="button-section">
+                            <div id="playToggle" class="button-row">
+                                <i class="fa fa-play" aria-hidden="true">&zwj;</i> Click play to track construction growth
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="chart-container">
+
+                        <iframe id="datawrapper-chart-4P7rS" src="https://datawrapper.dwcdn.net/4P7rS/6/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen"
+                            msallowfullscreen="msallowfullscreen" width="100%" height="324"></iframe>
+                        <script type="text/javascript">
+                            if ("undefined" == typeof window.datawrapper) window.datawrapper = {};
+                            window.datawrapper["4P7rS"] = {}, window.datawrapper["4P7rS"].embedDeltas = {
+                                "100": 324,
+                                "200": 324,
+                                "300": 400,
+                                "400": 400,
+                                "500": 500,
+                                "600": 500,
+                                "700": 500,
+                                "800": 500,
+                                "900": 500,
+                                "1000": 500
+                            }, window.datawrapper["4P7rS"].iframe = document.getElementById("datawrapper-chart-4P7rS"), window.datawrapper["4P7rS"].iframe.style.height = window.datawrapper["4P7rS"].embedDeltas[Math.min(1e3, Math.max(100 * Math.floor(
+                                window.datawrapper[
+                                    "4P7rS"].iframe.offsetWidth / 100), 100))] + "px", window.addEventListener("message", function(a) {
+                                if ("undefined" != typeof a.data["datawrapper-height"])
+                                    for (var b in a.data["datawrapper-height"])
+                                        if ("4P7rS" == b) window.datawrapper["4P7rS"].iframe.style.height = a.data["datawrapper-height"][b] + "px"
+                            });
+                        </script>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="right-section">
-            <div class="legend-buttons">
-                <div class="button-section">
-                    <div id="playToggle" class="button-row">
-                        <i class="fa fa-play" aria-hidden="true">&zwj;</i> Click play to track construction growth
-                    </div>
-                </div>
-            </div>
-            <!-- <p class="description instructions"><i class="fa fa-play" aria-hidden="true">&zwj;</i> Click play to track construction growth.</p> -->
-            <div id="chart-container">
-                <!-- <div class="line-container">
-           <div id="trackline"></div>
-        </div> -->
-                <!-- <div id="line-chart" class="ct-chart ct-major-tenth"></div> -->
-                <iframe id="datawrapper-chart-4P7rS" src="https://datawrapper.dwcdn.net/4P7rS/5/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen"
-                    msallowfullscreen="msallowfullscreen" width="100%" height="324"></iframe>
-                <script type="text/javascript">
-                    if ("undefined" == typeof window.datawrapper) window.datawrapper = {};
-                    window.datawrapper["4P7rS"] = {}, window.datawrapper["4P7rS"].embedDeltas = {
-                        "100": 384,
-                        "200": 324,
-                        "300": 324,
-                        "400": 324,
-                        "500": 324,
-                        "600": 324,
-                        "700": 324,
-                        "800": 324,
-                        "900": 324,
-                        "1000": 324
-                    }, window.datawrapper["4P7rS"].iframe = document.getElementById("datawrapper-chart-4P7rS"), window.datawrapper["4P7rS"].iframe.style.height = window.datawrapper["4P7rS"].embedDeltas[Math.min(1e3, Math.max(100 * Math.floor(
-                        window.datawrapper[
-                            "4P7rS"].iframe.offsetWidth / 100), 100))] + "px", window.addEventListener("message", function(a) {
-                        if ("undefined" != typeof a.data["datawrapper-height"])
-                            for (var b in a.data["datawrapper-height"])
-                                if ("4P7rS" == b) window.datawrapper["4P7rS"].iframe.style.height = a.data["datawrapper-height"][b] + "px"
-                    });
-                </script>
-                <!-- <div id="chart-line-container">
-            <div id="chart-line"></div>
-        </div> -->
-            </div>
+
+
+            <div class="source">SOURCES: City of Philadelphia; Inquirer analysis</div>
+            <div class="source credit">JARED WHALEN / Staff</div>
         </div>
     </div>
-
-
-    <div class="source">SOURCES: City of Philadelphia; Inquirer analysis</div>
-    <div class="source credit">JARED WHALEN / Staff</div>
-</div>
-</div>
 </div>

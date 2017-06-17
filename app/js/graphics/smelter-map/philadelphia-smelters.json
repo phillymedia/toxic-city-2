@@ -168,24 +168,8 @@
                 "coordinates": [-75.076392, 39.99582]
             }
         },
-        {
-            "type": "Feature",
-            "properties": {
-                "SiteName": "FEDERATED METALS CORP. LEAD SMELTER 2",
-                "type": "smelter",
-                "Site ID": "_0306812_",
-                "EPA ID": "PAN000306812",
-                "Address": "1700 WALNUT STREET ",
-                "City": "PHILADELPHIA",
-                "Zip": "_19102_",
-                "lat": 39.949822,
-                "long": -75.16926
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-75.16926, 39.949822]
-            }
-        },
+        { "type": "Feature", "properties": { "EPAID": "PASFN0305549", "SiteName": "FRANKLIN SLAG PILE (MDC)", "Address": "3110 CASTOR AVENUE", "City": "PHILADELPHIA", "State": "Pa", "Zip": "19134", "addrtype": "street_address", "addrlocat": "RANGE_INTERPOLATED" }, "geometry": { "type": "Point", "coordinates": [ -75.083703, 39.983289 ] } },
+        { "type": "Feature", "properties": { "EPAID": null, "SiteName": "WILLIAM WHITE SMELTING WORKS", "Address": "1506-1514 WILT ST", "City": "PHILADELPHIA", "State": "Pa", "Zip": "19125", "addrtype": "street_address", "addrlocat": "ROOFTOP" }, "geometry": { "type": "Point", "coordinates": [ -75.1296877, 39.9763489 ] } },
         {
             "type": "Feature",
             "properties": {
@@ -255,7 +239,7 @@
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-75.121146, 39.977638]
+                "coordinates": [-75.119092,39.977576]
             }
         },
         {
@@ -346,24 +330,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [-75.177668, 39.939342]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "SiteName": "METAL BANK OF AMERICA",
-                "type": "smelter",
-                "Site ID": "_0302383_",
-                "EPA ID": "PAD981737166",
-                "Address": "6801 STATE ROAD ",
-                "City": "PHILADELPHIA",
-                "Zip": "_19138_",
-                "lat": 40.019328,
-                "long": -75.037201
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-75.037201, 40.019328]
             }
         },
         {

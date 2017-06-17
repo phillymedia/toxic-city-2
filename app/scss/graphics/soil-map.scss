@@ -246,6 +246,9 @@ span svg {
         // margin: 0 auto 20px auto;
         order: 2;
     };
+    @include mobile {
+        display: none;
+    };
   }
   .legend {
     text-align: left;
@@ -441,6 +444,12 @@ ul.sampleList {
     .button-row {
         min-width: 150px;
         @include flex(0 1 150px);
+        @include tablet {
+            @include flex(1 1 28%);
+        }
+        @include mobile {
+            @include flex(1 1 45%);
+        };
     }
 
 }

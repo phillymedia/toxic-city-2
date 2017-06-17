@@ -26,7 +26,7 @@ data.features.sort(function(a, b) {
 data.features.forEach(function(feature) {
     feature.properties.indexNum = data.features.indexOf(feature);
     if (feature.properties.result >= 400) {
-        $(".sortList").append("<div class='flexrow' data-num='"+feature.properties.indexNum+"'><div class='inline-marker'><div class='marker-inner' data-score='"+feature.properties.result+"'></div></div><div class='flexname'>" + feature.properties.crossStree + " "+feature.properties.siteName+"</div><div class='flexresult'> " + feature.properties.result.toFixed(1) + "</div></div>")
+        $(".sortList").append("<div class='flexrow' data-num='"+feature.properties.indexNum+"'><div class='inline-marker'><div class='marker-inner' data-score='"+feature.properties.result+"'></div></div><div class='flexname'>" + feature.properties.crossStree + "</div><div class='flexresult'> " + feature.properties.result.toFixed(1) + "</div></div>")
     }
 
     if (feature.properties && feature.properties.crossStree) {
@@ -48,12 +48,12 @@ var onEachFeature = function onEachFeature(feature, layer) {
     feature.layer = layer;
     var templateData = byStreet[feature.properties.crossStree];
 
-    layer.bindPopup('<div class="popupHead"><span class="intro">In the vicinity of </span>' + feature.properties.crossStree + '</div><ul class="sampleList">All peak soil results:</ul>');
+    layer.bindPopup('<div class="popupHead"><span class="intro">In the vicinity of </span>' + feature.properties.crossStree + '</div><ul class="sampleList">All soil results:</ul>');
 
 
     layer.on('click', function(e) {
         $(".sampleList").empty();
-        $(".sampleList").append("All peak soil results:");
+        $(".sampleList").append("All soil results:");
         currentItem = feature;
         var index = feature.properties.indexNum;
         layerData = byStreet[currentItem.properties.crossStree];
@@ -166,7 +166,11 @@ var smelters_local = L.geoJSON(smelters_localData, {
     }
 });
 
-var toggle = true;
+
+smelters_local.addTo(map);
+
+
+var toggle = false;
 
 function togglePoints() {
     if (!toggle) {

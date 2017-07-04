@@ -2,7 +2,8 @@ var points = require("./permitpoints.json");
 require("./timeline");
 // require("./timelineslider");
 
-var basemapURL = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png';
+// var basemapURL = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') + '.png';
+
 
 
 var map = L.map('map-permits', {
@@ -10,10 +11,18 @@ var map = L.map('map-permits', {
     dragging: false,
     minZoom: 13
 }).setView([39.974259, -75.128513], 14);
-mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+
+var basemapURL = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}'+ (L.Browser.retina ? '@2x' : '') +'.png';
 L.tileLayer(basemapURL, {
-    attribution: '&copy; ' + mapLink + ' Contributors'
+    opacity: 0.7,
+
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
 }).addTo(map);
+
+// mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+
+// L.esri.Vector.basemap("Topographic").addTo(map);
+
 
 map.scrollWheelZoom.disable();
 map.touchZoom.disable();

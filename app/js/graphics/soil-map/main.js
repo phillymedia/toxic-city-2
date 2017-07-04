@@ -1,17 +1,24 @@
-var base = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; ' + mapLink + ' Contributors'
-})
+// var base = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+//     attribution: '&copy; ' + mapLink + ' Contributors'
+// })
 
-var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>',
+// var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>',
     bounds = new L.LatLngBounds(new L.LatLng(39.948527, -75.192388), new L.LatLng(40.021831, -75.023735));
 var map = L.map('map-samples', {
     center: [39.974259, -75.128513],
     zoom: 14,
-    layers: [base],
+    // layers: [base],
     //minZoom: 14,
     maxBounds: bounds
 });
 
+// L.esri.Vector.basemap("Topographic").addTo(map);
+var basemapURL = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}'+ (L.Browser.retina ? '@2x' : '') +'.png';
+L.tileLayer(basemapURL, {
+    opacity: 0.7,
+
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+}).addTo(map);
 
 var data = require("./newdata.geo.json");
 var smelters_localData = require("./newsmelters.geo.json");

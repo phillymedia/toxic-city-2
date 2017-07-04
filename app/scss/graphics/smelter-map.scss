@@ -139,6 +139,11 @@ span svg {
         @include flex(1 1 100%);
         padding: 0;
     };
+    @include mobile {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 360px;
+    };
   }
 }
 
@@ -152,6 +157,7 @@ span svg {
         bottom: 0;
         right: 0;
         width: 100%;
+        background: white;
         height: 100%;
     }
 }

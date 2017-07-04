@@ -467,6 +467,45 @@ svg {
 
     }
 }
+.wide-right-small {
+    width: 50%;
+    width: 500px !important;
+
+    float: none;
+    padding: 0 !important;
+    margin: 0px 0 15px 20px;
+
+    .imagebreak {
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 30px;
+    }
+    @include tablet {
+        margin-left: 15px;
+        max-width: 60%;
+        .imagebreak {
+            padding-left: 0;
+        }
+    };
+    @include mobile {
+        max-width: 100%;
+        padding-top: 10px;
+    };
+    @include BS-medium {
+        margin-right: -15vw;
+        margin-left: 20px;
+        padding-top: 0;
+        margin-top: 0;
+
+    }
+    @include BS-large {
+        margin-right: -22vw;
+        width: 500px !important;
+        margin-left: 20px;
+        margin-top: 0;
+
+    }
+}
 //jared's css
 
 .video-transition {
@@ -557,4 +596,29 @@ svg {
         font-size: 16px;
         line-height: normal;
     }
+}
+
+.headerIntro {
+    .backgroundImage {
+        @include mobile {
+            background-image: url('http://media.philly.com/storage/inquirer/video/dronestill2.jpg');
+            background-size: 100%;
+            height: auto;
+            background-attachment: local;
+            background-position: top 50px center;
+            padding-bottom: 55%;
+        };
+    }
+    #introvideo {
+        @include mobile{
+            display: none;
+        };
+    }
+}
+
+.social-bottom {
+    @include display-flex;
+    @include flex(1 1 100%);
+justify-content: center;
+padding-bottom: 30px;
 }

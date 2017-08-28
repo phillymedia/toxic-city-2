@@ -180,10 +180,17 @@
   opacity: 0;
 }
 
-.header {
+#header {
   position: absolute;
-  section {
+  // section {
+  //     position: absolute;
+  // }
+  .subscribetoday__wrap {
       position: absolute;
+      a {
+          color: white;
+          cursor: pointer;
+      }
   }
   progress {
       position: absolute !important;
